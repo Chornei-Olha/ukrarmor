@@ -10,10 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  @apply font-main;
-}
-
 *,
 *::before,
 *::after {

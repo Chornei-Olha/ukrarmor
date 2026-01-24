@@ -1,11 +1,18 @@
 import React from 'react';
 import '../styles/index.css';
-import { Montserrat } from 'next/font/google';
+import { Roboto_Condensed, Cormorant_Garamond } from 'next/font/google';
 
-const montserrat = Montserrat({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-main',
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-roboto-condensed',
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  style: ['italic'],
+  variable: '--font-cormorant',
 });
 
 export const viewport = {
@@ -14,8 +21,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'V&V consulting',
-  description: 'V&V consulting',
+  title: 'Art POSURE',
+  description: 'site of art school',
   icons: {
     icon: [{ url: '/favicon.webp' }],
   },
@@ -27,8 +34,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ua">
-      <body className={montserrat.variable}>
+    <html lang="en">
+      <body className={`${robotoCondensed.variable} ${cormorant.variable}`}>
+        {' '}
         {children}
         <script
           type="module"

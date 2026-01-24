@@ -1,24 +1,26 @@
 'use client';
 import React from 'react';
 import Header from '../components/ui/Header';
-import HeroSection from '../components/ui/HeroSection';
-import AboutSection from '../components/ui/AboutSection';
-import DirectionsSection from '../components/ui/DirectionsSection';
-// import HowWeWork from '../components/ui/HowWeWork';
-import WhyUs from '../components/ui/WhyUs';
+import HeroSection from '../components/ui/Hero';
+import AboutText from '../components/ui/AboutText';
+import FollowFeed from '../components/ui/FollowFeed';
 import Footer from '../components/ui/Footer';
-import BoardSlider from '../components/ui/BoardSlider';
+
+// import DirectionsSection from '../components/ui/DirectionsSection';
+// import BoardSlider from '../components/ui/BoardSlider';
+import { FeatherIcon } from 'lucide-react';
+import FeaturedCollections from '../components/ui/FeaturedCollections';
 
 const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen font-inter overflow-x-hidden">
       <Header />
       <HeroSection />
-      <BoardSlider />
-      <AboutSection />
-      <DirectionsSection />
-      {/* <HowWeWork /> */}
-      <WhyUs />
+      <AboutText />
+      <FeaturedCollections />
+      <FollowFeed />
+      {/* <BoardSlider />
+      <DirectionsSection /> */}
       <Footer />
     </div>
   );

@@ -47,9 +47,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        main: ['var(--font-main)', 'serif'],
-        // inter: ['Inter', 'sans-serif'],
-        unbounded: ['Unbounded', 'sans-serif'],
+        roboto: ['var(--font-roboto-condensed)'],
+        cormorant: ['var(--font-cormorant)'],
       },
 
       keyframes: {
