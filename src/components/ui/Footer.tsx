@@ -108,7 +108,15 @@ export default function Footer() {
 
       {/* BOTTOM */}
       <div className="py-6 text-center font-roboto text-[14px] leading-none">
-        Copyright © 2026 «Art POSURE» | Created by Chornei Olha
+        Copyright © 2026 «Art POS|URE» | Created by{' '}
+        <a
+          href="https://www.instagram.com/olha_chornei/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Chornei Olha
+        </a>
       </div>
     </footer>
   );

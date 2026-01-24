@@ -37,7 +37,7 @@ export const metadata = {
         url: 'https://art-posure.vercel.app/images/og-image.png', // абсолютный путь
         width: 1200,
         height: 630,
-        alt: 'Art POSURE Logo',
+        alt: 'Art POS|URE Logo',
       },
     ],
     siteName: 'Art POS|URE',
