@@ -21,10 +21,27 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Art POSURE',
-  description: 'site of art school',
+  title: 'Art POS|URE',
+  description:
+    'POS|URE is not a form, but an inner position. I don’t depict it — I stand within it.',
   icons: {
-    icon: [{ url: '/favicon.webp' }],
+    icon: [{ url: '/images/favicon.webp' }],
+  },
+  openGraph: {
+    title: 'Art POS|URE — Where Art Meets Stillness',
+    description:
+      'POS|URE is not a form, but an inner position. I don’t depict it — I stand within it.',
+    url: 'https://art-posure.vercel.app/', // сюда ссылку на сайт
+    images: [
+      {
+        url: '/og-image.png', // картинка для соцсетей
+        width: 1200,
+        height: 630,
+        alt: 'Art POSURE Logo',
+      },
+    ],
+    siteName: 'Art POSURE',
+    type: 'website',
   },
 };
 
