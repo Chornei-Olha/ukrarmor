@@ -28,7 +28,15 @@ export default function FollowFeed() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="flex items-center gap-3 border px-8 py-3 font-roboto text-[18px] font-medium uppercase leading-none transition hover:opacity-60">
+              <button
+                className="
+    flex items-center gap-3 border rounded-[2px] px-8 py-3 font-roboto text-[18px] font-medium uppercase leading-none 
+    transition hover:opacity-60
+    bg-[#EEF5F1]           /* мягкий фон */
+    shadow-[0_0_20px_5px_rgba(238,245,241,0.5)] /* легкая подсветка */
+    animate-pulse-slow    /* наша кастомная анимация */
+  "
+              >
                 <span className="text-lg">
                   <Image
                     src="/icons/instagram.svg"

@@ -45,12 +45,16 @@ export default function Hero() {
           <button
             onClick={() => setOpen(true)}
             className="
-              mt-8 border rounded-[2px]
-              px-6 py-3 sm:px-8 sm:py-4
-              font-roboto font-bold uppercase leading-none
-              text-[14px] sm:text-[20px] lg:text-[24px]
-              transition hover:bg-black hover:text-white
-            "
+    mt-8 border rounded-[2px]
+    px-6 py-3 sm:px-8 sm:py-4
+    font-roboto font-medium uppercase leading-none
+    text-[14px] sm:text-[20px] lg:text-[24px]
+    bg-[#EEF5F1]                           /* фон подсветки */
+    shadow-[0_0_20px_5px_rgba(238,245,241,0.5)] /* мягкая подсветка */
+    transition
+    hover:opacity-60
+    animate-pulse-slow                        /* пульсация */
+  "
           >
             Step Inside
           </button>
