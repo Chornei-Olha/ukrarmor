@@ -40,7 +40,7 @@ export const metadata = {
         alt: 'Art POSURE Logo',
       },
     ],
-    siteName: 'Art POSURE',
+    siteName: 'Art POS|URE',
     type: 'website',
   },
 };
