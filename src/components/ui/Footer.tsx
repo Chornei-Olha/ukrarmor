@@ -49,7 +49,7 @@ export default function Footer() {
             <p className="pt-4">
               Phone:{' '}
               <a href="tel:+447342366339" className="text-blue-600 hover:underline">
-                +44 7342 366339
+                +447342366339
               </a>
             </p>
             <p>
