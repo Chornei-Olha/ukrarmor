@@ -21,9 +21,11 @@ const items = [
 
 export default function FeaturedCollections() {
   return (
-    <section className="py-16">
+    <section className="py-8 md:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-6 text-center">
-        <h2 className="mb-16 font-cormorant text-[64px] italic leading-none">Our services</h2>
+        <h2 className="mb-10 font-cormorant text-[45px] md:text-[64px] italic leading-none">
+          Our services
+        </h2>
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {items.map((item) => (
@@ -45,7 +47,7 @@ export default function FeaturedCollections() {
                   px-8
                   py-3
                   font-roboto
-                  text-[24px]
+                  text-[18px]
                   font-medium
                   uppercase
                   leading-none

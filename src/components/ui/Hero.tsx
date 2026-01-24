@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
+import PopupForm from '@/components/ui/PopupForm';
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="w-full">
       <div
@@ -24,7 +30,7 @@ export default function Hero() {
         </div>
 
         {/* Центр */}
-        <div className="text-center flex flex-col items-center justify-center px-6 py-8 lg:py-0">
+        <div className="text-center flex flex-col items-center justify-center px-6 py-8 md:py-12 lg:py-16">
           <h1
             className="
               font-cormorant italic uppercase leading-[97%]
@@ -37,6 +43,7 @@ export default function Hero() {
           </h1>
 
           <button
+            onClick={() => setOpen(true)}
             className="
               mt-8 border rounded-[2px]
               px-6 py-3 sm:px-8 sm:py-4
@@ -60,6 +67,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      <PopupForm isOpen={open} onClose={() => setOpen(false)} />
     </section>
   );
 }

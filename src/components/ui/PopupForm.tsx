@@ -47,7 +47,7 @@ export default function PopupForm({ isOpen, onClose }: { isOpen: boolean; onClos
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -56,65 +56,152 @@ export default function PopupForm({ isOpen, onClose }: { isOpen: boolean; onClos
         {!showThankYou ? (
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-3xl p-8 w-[90%] max-w-md shadow-[0_0_40px_8px_rgba(59,130,246,0.5)]"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="
+    relative
+    w-[90%]
+    max-w-md
+    bg-[#fdfbf7]
+    border
+    border-black
+    rounded-[2px]
+    p-8
+    font-roboto
+    shadow-[0_0_40px_10px_rgba(238,245,241,0.5)]
+  "
           >
+            {/* Close */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 text-2xl text-gray-400 hover:text-black"
+              className="absolute top-4 right-4 text-black text-xl hover:opacity-60"
             >
               ×
             </button>
 
-            <h3 className="text-2xl font-bold text-blue-500 mb-6 text-center">
-              Отримати консультацію
+            <h3
+              className="
+                font-cormorant
+                italic
+                uppercase
+                text-[28px]
+                text-center
+                mb-8
+                tracking-wide
+              "
+            >
+              Get in Touch
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                placeholder="Ваше імʼя"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="w-full border rounded-full px-4 py-3 text-gray-800 placeholder-gray-500"
-              />
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Name */}
+              <div>
+                <label className="block uppercase text-[12px] mb-2 tracking-wide">Your Name</label>
+                <input
+                  type="text"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="
+                    w-full
+                    bg-transparent
+                    border-b
+                    border-black
+                    px-2
+                    py-2
+                    text-[16px]
+                    focus:outline-none
+                  "
+                />
+              </div>
 
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="w-full border rounded-full px-4 py-3 text-gray-800 placeholder-gray-500"
-              />
+              {/* Email */}
+              <div>
+                <label className="block uppercase text-[12px] mb-2 tracking-wide">Email</label>
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="
+                    w-full
+                    bg-transparent
+                    border-b
+                    border-black
+                    px-2
+                    py-2
+                    text-[16px]
+                    focus:outline-none
+                  "
+                />
+              </div>
 
-              <textarea
-                placeholder="Опишіть вашу ситуацію"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                rows={4}
-                required
-                className="w-full border rounded-2xl px-4 py-3 text-gray-800 placeholder-gray-500"
-              />
+              {/* Message */}
+              <div>
+                <label className="block uppercase text-[12px] mb-2 tracking-wide">Message</label>
+                <textarea
+                  rows={4}
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="
+                    w-full
+                    bg-transparent
+                    border-b
+                    border-black
+                    px-2
+                    py-2
+                    text-[16px]
+                    focus:outline-none
+                    resize-none
+                  "
+                />
+              </div>
 
-              <button
-                type="submit"
-                className="w-full bg-blue-400 text-white py-3 rounded-full font-medium hover:bg-blue-500 transition"
-              >
-                Надіслати
-              </button>
+              {/* Button */}
+              <div className="pt-6 text-center">
+                <button
+                  type="submit"
+                  className="
+                    border
+                    border-black
+                    px-10
+                    py-3
+                    uppercase
+                    tracking-wide
+                    text-[14px]
+                    transition
+                    hover:bg-black
+                    hover:text-white
+                  "
+                >
+                  Send Request
+                </button>
+              </div>
             </form>
           </motion.div>
         ) : (
           <motion.div
-            className="bg-white rounded-3xl p-10 w-[90%] max-w-md text-center shadow-xl"
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="
+              w-[90%]
+              max-w-md
+              bg-[#fdfbf7]
+              border
+              border-black
+              rounded-[2px]
+              p-10
+              text-center
+              font-roboto
+            "
           >
-            <h3 className="text-2xl font-bold text-blue-500 mb-4">Дякуємо!</h3>
-            <p>Ми звʼяжемося з вами найближчим часом.</p>
+            <h3 className="font-cormorant italic uppercase text-[26px] mb-4">Thank You</h3>
+            <p className="text-[16px]">We’ll contact you shortly.</p>
           </motion.div>
         )}
       </motion.div>

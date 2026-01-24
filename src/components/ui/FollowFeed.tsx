@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function FollowFeed() {
   return (
-    <section className="relative bg-[#F7F2EE] py-16">
+    <section className="relative bg-[#F7F2EE] py-8 md:py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-6">
         {/* TITLE */}
-        <h2 className="mb-20 text-center font-cormorant text-[56px] italic leading-none">
+        <h2 className="mb-10 text-center font-cormorant text-[45px] md:text-[64px] italic leading-none">
           Follow our feed
         </h2>
 

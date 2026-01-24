@@ -12,7 +12,7 @@ export default function Header() {
       <div className="h-px w-full bg-neutral-200" />
 
       {/* MAIN HEADER */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* LOGO */}
         <a href="/" className="mr-auto">
           <Image src="/images/logo-new.svg" alt="logo" width={100} height={50} priority />
