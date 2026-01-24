@@ -34,7 +34,7 @@ export const metadata = {
     url: 'https://art-posure.vercel.app/', // сюда ссылку на сайт
     images: [
       {
-        url: 'https://art-posure.vercel.app/og-image.png', // абсолютный путь
+        url: 'https://art-posure.vercel.app/images/og-image.png', // абсолютный путь
         width: 1200,
         height: 630,
         alt: 'Art POSURE Logo',
