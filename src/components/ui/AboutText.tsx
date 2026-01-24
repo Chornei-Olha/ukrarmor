@@ -2,7 +2,7 @@ export default function AboutText() {
   return (
     <section className="py-16">
       <div className="mx-auto max-w-4xl px-6 text-center">
-        <p className="font-roboto text-[24px] font-light leading-[130%]">
+        <p className="font-roboto text-[16px] md:text-[24px] font-light leading-[130%]">
           I am Olena from Zaporizhzhia, Ukraine. Art has always been a part of my life—from a happy
           childhood, where the first strokes on paper opened up an endless world of creativity, to
           today, when art has become not only a form of self-expression but also a way to help

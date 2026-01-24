@@ -9,10 +9,10 @@ export default function Footer() {
           {/* COLUMN 1 */}
           <div className="flex items-center justify-center md:items-start md:justify-start">
             <Image
-              src="/images/logo.svg"
-              alt="Simple Brown Box"
-              width={300}
-              height={200}
+              src="/images/logo-new.svg"
+              alt="logo"
+              width={200}
+              height={100}
               className="opacity-80"
             />
           </div>
