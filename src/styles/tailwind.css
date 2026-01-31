@@ -230,3 +230,17 @@
 .animate-pulse-slow {
   animation: pulse-slow 2s infinite;
 }
+
+.hero-image-wrapper {
+  display: inline-block;
+}
+
+.fade-overlay {
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.3) 70%,
+    rgba(255, 255, 255, 0.6) 85%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}

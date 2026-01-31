@@ -1,18 +1,17 @@
 import React from 'react';
 import '../styles/index.css';
-import { Roboto_Condensed, Cormorant_Garamond } from 'next/font/google';
+import { Cormorant, Anonymous_Pro } from 'next/font/google';
 
-const robotoCondensed = Roboto_Condensed({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
-  variable: '--font-roboto-condensed',
+const headingFont = Cormorant({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-heading',
 });
 
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400'],
-  style: ['italic'],
-  variable: '--font-cormorant',
+const bodyFont = Anonymous_Pro({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '700'],
+  variable: '--font-body',
 });
 
 export const viewport = {
@@ -21,16 +20,14 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Art POS|URE',
-  description:
-    'POS|URE is not a form, but an inner position. I don’t depict it — I stand within it.',
+  title: 'Ukrarmor',
+  description: 'Protection from drones',
   icons: {
-    icon: [{ url: '/images/favicon.webp' }],
+    icon: [{ url: '/images/logo.png' }],
   },
   openGraph: {
-    title: 'Art POS|URE — Where Art Meets Stillness',
-    description:
-      'POS|URE is not a form, but an inner position. I don’t depict it — I stand within it.',
+    title: 'Ukrarmor',
+    description: 'Protection from drones',
     url: 'https://art-posure.vercel.app/', // сюда ссылку на сайт
     images: [
       {
@@ -40,7 +37,7 @@ export const metadata = {
         alt: 'Art POS|URE Logo',
       },
     ],
-    siteName: 'Art POS|URE',
+    siteName: 'AUkrarmor',
     type: 'website',
   },
 };
@@ -51,15 +48,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${robotoCondensed.variable} ${cormorant.variable}`}>
-        {' '}
-        {children}
-        <script
-          type="module"
-          src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbuddhasa1071back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.7"
-        ></script>
-      </body>
+    <html lang="uk" className={`${headingFont.variable} ${bodyFont.variable}`}>
+      <body className="font-body">{children}</body>
     </html>
   );
 }

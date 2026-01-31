@@ -47,8 +47,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        roboto: ['var(--font-roboto-condensed)'],
-        cormorant: ['var(--font-cormorant)'],
+        heading: ['var(--font-heading)', 'serif'],
+        body: ['var(--font-body)', 'monospace'],
       },
 
       keyframes: {

@@ -14,8 +14,9 @@ export default function Header() {
       {/* MAIN HEADER */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* LOGO */}
-        <a href="/" className="mr-auto">
-          <Image src="/images/logo-new.svg" alt="logo" width={100} height={50} priority />
+        <a href="/" className="mr-auto flex items-center gap-3">
+          <Image src="/images/logo.png" alt="logo" width={70} height={70} priority />
+          <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
         </a>
 
         {/* DESKTOP NAV */}

@@ -1,77 +1,54 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
-import PopupForm from '@/components/ui/PopupForm';
 
 export default function Hero() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <section className="w-full">
-      <div
-        className="
-          mx-auto max-w-full
-          flex flex-col
-          min-h-screen
-          lg:min-h-0
-          lg:grid lg:grid-cols-3 lg:items-center lg:gap-12
-        "
-      >
-        {/* Верхняя картинка */}
-        <div className="w-full flex-1 lg:h-full">
-          <Image
-            src="/images/hero-left.webp"
-            alt="Healing space"
-            width={500}
-            height={700}
-            className="h-full w-full object-cover"
-          />
-        </div>
+    <section className="relative h-auto overflow-hidden bg-white font-body">
+      {/* Жовта тінь / градієнт */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-1/2 bg-gradient-to-r from-yellow-300/40 via-yellow-200/20 to-transparent" />
 
-        {/* Центр */}
-        <div className="text-center flex flex-col items-center justify-center px-6 py-8 md:py-12 lg:py-16">
-          <h1
-            className="
-              font-cormorant italic uppercase leading-[97%]
-              text-[32px] sm:text-[48px] lg:text-[70px]
-            "
-          >
-            A Place to Heal,
+      <div className="container relative z-10 mx-auto max-h-screen md:min-h-[700px] grid grid-cols-1 items-center gap-8 px-6 md:grid-cols-2">
+        {/* Ліва частина — текст */}
+        <div className="flex flex-col justify-center space-y-6 max-w-7xl ">
+          <h1 className="font-heading text-4xl font-semibold leading-tight text-blue-600 md:text-6xl">
+            Комплексний
             <br />
-            Grow, and Create
+            захист від БПЛА
           </h1>
-
-          <button
-            onClick={() => setOpen(true)}
-            className="
-    mt-8 border rounded-[2px]
-    px-6 py-3 sm:px-8 sm:py-4
-    font-roboto font-medium uppercase leading-none
-    text-[14px] sm:text-[20px] lg:text-[24px]
-    bg-[#EEF5F1]                           /* фон подсветки */
-    shadow-[0_0_20px_5px_rgba(238,245,241,0.5)] /* мягкая подсветка */
-    transition
-    hover:opacity-60
-    animate-pulse-slow                        /* пульсация */
-  "
-          >
-            Step Inside
-          </button>
+          <p className="max-w-xl text-lg text-blue-600 md:text-xl">
+            Кінетичний захист об'єктів критичної інфраструктури, об'єктів ПЕК та небезпечних
+            об'єктів промисловості
+          </p>
+          {/* <div className="pt-6">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo.png"
+                alt="ukrarmor"
+                width={100}
+                height={100}
+                className="object-contain"
+                priority
+              />{' '}
+              <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
+            </div>
+          </div> */}
         </div>
 
-        {/* Нижняя картинка */}
-        <div className="w-full flex-1 lg:h-full">
-          <Image
-            src="/images/hero-right.webp"
-            alt="Creative space"
-            width={500}
-            height={700}
-            className="h-full w-full object-cover object-left"
-          />
+        {/* Права частина — картинка */}
+        <div className="relative w-full flex items-center justify-center">
+          <div className="relative hero-image-wrapper">
+            <Image
+              src="/images/hero-drone.webp"
+              alt="Дрон за захисною сіткою"
+              width={700}
+              height={700}
+              className="object-contain"
+              priority
+            />
+
+            <div className="pointer-events-none absolute inset-0 fade-overlay" />
+          </div>
         </div>
       </div>
-      <PopupForm isOpen={open} onClose={() => setOpen(false)} />
     </section>
   );
 }
