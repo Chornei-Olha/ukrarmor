@@ -9,9 +9,9 @@ export default function Footer() {
           {/* COLUMN 1 */}
           <div className="flex items-center justify-center md:items-start md:justify-start">
             <Image
-              src="/images/logo-new.svg"
+              src="/images/logo.png"
               alt="logo"
-              width={200}
+              width={150}
               height={100}
               className="opacity-80"
             />
@@ -24,12 +24,6 @@ export default function Footer() {
             </a>
             <a href="/gallery" className="block mb-3">
               Gallery
-            </a>
-            <a href="/services" className="block mb-3">
-              Services
-            </a>
-            <a href="/faq" className="block mb-3">
-              FAQ
             </a>
             <a href="#" className="block mb-3">
               Privacy policy
@@ -108,7 +102,7 @@ export default function Footer() {
 
       {/* BOTTOM */}
       <div className="py-6 text-center font-roboto text-[14px] leading-none">
-        Copyright © 2026 «Art POS|URE» | Created by{' '}
+        Copyright © 2026 «UKRARMOR» | Created by{' '}
         <a
           href="https://www.instagram.com/olha_chornei/"
           target="_blank"

@@ -13,7 +13,7 @@ import CableNetSystems from '../components/ui/CableNetSystems';
 import StrengthCalculation from '../components/ui/StrengthCalculation';
 import ComplexApproach from '../components/ui/ComplexApproach';
 import ProcessSteps from '../components/ui/ProcessSteps';
-
+import CableProtectionSection from '../components/ui/CableProtectionSection';
 import Footer from '../components/ui/Footer';
 
 // import DirectionsSection from '../components/ui/DirectionsSection';
@@ -28,6 +28,7 @@ const LandingPage: React.FC = () => {
       <ChallengesSection />
       <HeroBPLA />
       <ComparativeSection />
+      <CableProtectionSection />
       <PriorityObjectsSection />
       <EngineeringServicesLeft />
       <EngineeringServicesRight />

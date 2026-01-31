@@ -23,8 +23,6 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 font-roboto text-[18px] uppercase leading-none">
           <a href="/">Home</a>
           <a href="/gallery">Gallery</a>
-          <a href="/services">Services</a>
-          <a href="/faq">FAQ</a>
         </nav>
 
         {/* BURGER BUTTON */}
@@ -58,12 +56,6 @@ export default function Header() {
           </a>
           <a href="/gallery" onClick={() => setOpen(false)}>
             Gallery
-          </a>
-          <a href="/services" onClick={() => setOpen(false)}>
-            Services
-          </a>
-          <a href="/faq" onClick={() => setOpen(false)}>
-            FAQ
           </a>
         </nav>
       </div>
