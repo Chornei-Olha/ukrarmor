@@ -52,7 +52,7 @@ export default function BoardSlider() {
     <div id="slider1" className="w-full text-center relative py-12">
       <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center">Про нас</h2>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative container mx-auto">
         {/* Стрелки (десктоп) */}
         <button
           onClick={() => swiperRef.current?.slidePrev()}

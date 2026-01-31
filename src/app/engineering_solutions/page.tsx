@@ -1,13 +1,13 @@
 'use client';
 import Header from '../../components/ui/Header';
-import Gallery from '../../components/ui/Gallery';
+import HeroBPLA from '../../components/ui/HeroBPLA';
 import Footer from '../../components/ui/Footer';
 
 const Products: React.FC = () => {
   return (
     <>
       <Header />
-      <Gallery />
+      <HeroBPLA />
       <Footer />
     </>
   );
