@@ -7,15 +7,15 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full relative">
+    <header className=" w-full relative">
       {/* TOP DIVIDER */}
-      <div className="h-px w-full bg-neutral-200" />
+      <div className="w-full bg-neutral-200" />
 
       {/* MAIN HEADER */}
       <div className="mx-auto flex container items-center justify-between px-6 py-4">
         {/* LOGO */}
         <a href="/" className="mr-auto flex items-center gap-3">
-          <Image src="/images/logo.png" alt="logo" width={70} height={70} priority />
+          <Image src="/images/logo.png" alt="logo" width={60} height={60} priority />
           <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
         </a>
 

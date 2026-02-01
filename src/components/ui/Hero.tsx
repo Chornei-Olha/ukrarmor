@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relativh-auto overflow-hidden bg-white font-body">
       {/* Жовта тінь / градієнт */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-1/2 bg-gradient-to-r from-yellow-300/40 via-yellow-200/20 to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-[100px] h-full w-full bg-gradient-to-r from-yellow-300/40 via-yellow-200/20 to-transparent" />
 
       <div className="container relative z-10 mx-auto max-h-screen md:min-h-[700px] grid grid-cols-1 items-center gap-8 px-6 md:grid-cols-2">
         {/* Ліва частина — текст */}
