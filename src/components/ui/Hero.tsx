@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-auto overflow-hidden bg-white font-body">
+    <section className="relativh-auto overflow-hidden bg-white font-body">
       {/* Жовта тінь / градієнт */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-1/2 bg-gradient-to-r from-yellow-300/40 via-yellow-200/20 to-transparent" />
 

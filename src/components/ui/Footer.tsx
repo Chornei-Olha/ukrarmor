@@ -37,13 +37,13 @@ export default function Footer() {
           <div className="space-y-3 font-roboto text-[16px] leading-[130%]">
             <p className="mb-4 font-medium uppercase">Information</p>
 
-            <p>Simple Brown Box Ltd</p>
-            <p>Flat 44</p>
+            <p>Ukrarmor</p>
+            {/* <p>Flat 44</p> */}
 
             <p className="pt-4">
               Phone:{' '}
               <a href="tel:+447342366339" className="text-blue-600 hover:underline">
-                +447342366339
+                +380678888888
               </a>
             </p>
             <p>
@@ -51,14 +51,14 @@ export default function Footer() {
                 href="mailto:Company@SimpleBrownBox.co.uk"
                 className="text-blue-600 hover:underline"
               >
-                Company@SimpleBrownBox.co.uk
+                ukrarmor@gmail.com
               </a>
             </p>
 
             {/* SOCIALS */}
             <div className="flex items-center gap-4 pt-6">
               <a
-                href="https://wa.me/447342366339"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -67,7 +67,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://t.me/yourusername"
+                href="https://t.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Telegram"
@@ -76,7 +76,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.instagram.com/asanka_91/"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -85,7 +85,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.facebook.com/alena.san.ko.2025"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
