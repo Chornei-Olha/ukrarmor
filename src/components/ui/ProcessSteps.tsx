@@ -36,7 +36,7 @@ export default function ProcessSteps() {
           «Ukrarmor» — ваш надійний технічний партнер для захисту від БПЛА
         </h2>
 
-        <p className="font-body text-base sm:text-lg text-gray-700 mb-12 max-w-3xl">
+        <p className="font-body text-base sm:text-lg text-gray-700 mb-12 max-w-3xl max-w-5xl sm:mx-auto text-left sm:text-center">
           Реалізуємо проєкти будь-якої складності, спираючись на промислову потужність і суворі
           стандарти якості
         </p>

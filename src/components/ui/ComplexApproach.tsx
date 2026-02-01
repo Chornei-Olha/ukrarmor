@@ -12,7 +12,7 @@ export default function ComplexApproach() {
         <div className="divide-y divide-gray-200">
           {/* ROW 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
-            <div className="font-body text-gray-800">
+            <div className="text-base sm:text-lg text-gray-800">
               <span className="font-semibold">1.</span> Проведено моделювання
             </div>
 
@@ -27,7 +27,7 @@ export default function ComplexApproach() {
 
           {/* ROW 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
-            <div className="font-body text-gray-800">
+            <div className="text-base sm:text-lg text-gray-800">
               <span className="font-semibold">2.</span> Створено натурну модель сегмента конструкції
             </div>
 
@@ -38,7 +38,7 @@ export default function ComplexApproach() {
 
           {/* ROW 3 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
-            <div className="font-body text-gray-800">
+            <div className="text-base sm:text-lg text-gray-800">
               <span className="font-semibold">3.</span> Проведено натурні випробування на
               випробувальному стенді
               <ul className="list-disc pl-6 mt-2 space-y-1 text-base sm:text-lg text-gray-600">
