@@ -28,16 +28,16 @@ export const metadata = {
   openGraph: {
     title: 'Ukrarmor',
     description: 'Protection from drones',
-    url: 'https://art-posure.vercel.app/', // сюда ссылку на сайт
+    url: 'https://ukrarmor.vercel.app/', // сюда ссылку на сайт
     images: [
       {
-        url: 'https://art-posure.vercel.app/images/og-image.png', // абсолютный путь
+        url: 'https://art-posure.vercel.app/images/logo.png', // абсолютный путь
         width: 1200,
         height: 630,
-        alt: 'Art POS|URE Logo',
+        alt: 'Ukrarmor Logo',
       },
     ],
-    siteName: 'AUkrarmor',
+    siteName: 'Ukrarmor',
     type: 'website',
   },
 };
