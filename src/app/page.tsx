@@ -16,10 +16,6 @@ import ProcessSteps from '../components/ui/ProcessSteps';
 import CableProtectionSection from '../components/ui/CableProtectionSection';
 import Footer from '../components/ui/Footer';
 
-// import DirectionsSection from '../components/ui/DirectionsSection';
-// import BoardSlider from '../components/ui/BoardSlider';
-import { FeatherIcon } from 'lucide-react';
-
 const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen font-inter overflow-x-hidden">
@@ -37,8 +33,6 @@ const LandingPage: React.FC = () => {
       <StrengthCalculation />
       <ComplexApproach />
       <ProcessSteps />
-      {/* <BoardSlider />
-      <DirectionsSection /> */}
       <Footer />
     </div>
   );

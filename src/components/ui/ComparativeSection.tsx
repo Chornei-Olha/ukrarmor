@@ -72,27 +72,28 @@ const labels: Label[] = [
 
 export default function ComparativeSection() {
   return (
-    <section className="relative w-full bg-white py-16 px-4 md:px-10">
+    <section className="relative w-full bg-white px-6 md:px-12 py-6 md:py-12">
       <div className="mx-auto container">
         {/* Header */}
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-blue-700 max-w-2xl">
+        <div className="mb-10 flex flex-col gap-4 items-start sm:items-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-blue-700 max-w-5xl sm:mx-auto text-left sm:text-center">
             Порівняльний аналіз існуючих засобів захисту від атак БПЛА
           </h2>
         </div>
 
         {/* Desktop Table */}
-        {/* Desktop Table */}
         <div className="hidden md:block overflow-x-auto">
-          <div className="min-w-[900px] grid grid-cols-5 rounded-2xl overflow-hidden shadow-lg border">
+          <div className="min-w-[900px] grid grid-cols-5 rounded-xl overflow-hidden shadow-lg border">
             {/* Header Row */}
-            <div className="bg-blue-800 text-white p-4 font-semibold">Параметр для порівняння</div>
+            <div className="bg-blue-800 text-white p-4 font-semibold text-base">
+              Параметр для порівняння
+            </div>
 
             {columns.map((col, idx) => (
-              <div key={idx} className="relative h-32 bg-gray-100">
+              <div key={idx} className="relative h-40 bg-gray-100">
                 <Image src={col.image} alt={col.title} fill className="object-cover" />
-                <div className="absolute inset-0 bg-blue-900/40 flex items-end">
-                  <h3 className="p-3 text-white font-semibold text-sm">{col.title}</h3>
+                <div className="absolute inset-0 bg-blue-900/30 flex items-end">
+                  <h3 className="text-base p-3 text-white font-semibold">{col.title}</h3>
                 </div>
               </div>
             ))}
@@ -100,12 +101,12 @@ export default function ComparativeSection() {
             {/* Data Rows */}
             {labels.map((row) => (
               <>
-                <div className="bg-blue-700 text-white p-4 text-sm font-medium border-t border-blue-600">
+                <div className="bg-blue-700 text-white p-4 text-base font-medium border-t border-blue-600">
                   {row.label}
                 </div>
 
                 {columns.map((col, idx) => (
-                  <div key={idx} className="bg-gray-50 p-4 text-sm text-gray-800 border-t">
+                  <div key={idx} className="bg-gray-50 p-4 text-base text-gray-800 border-t">
                     {col.rows[row.key]}
                   </div>
                 ))}
@@ -125,10 +126,10 @@ export default function ComparativeSection() {
         {/* Mobile Cards */}
         <div className="md:hidden space-y-6">
           {columns.map((col, idx) => (
-            <div key={idx} className="rounded-2xl overflow-hidden shadow-lg border bg-white">
+            <div key={idx} className="rounded-xl overflow-hidden shadow-lg border bg-white">
               <div className="relative h-40 w-full">
                 <Image src={col.image} alt={col.title} fill className="object-cover" />
-                <div className="absolute inset-0 bg-blue-900/60 flex items-end">
+                <div className="absolute inset-0 bg-blue-900/40 flex items-end">
                   <h3 className="p-4 text-white font-semibold">{col.title}</h3>
                 </div>
               </div>

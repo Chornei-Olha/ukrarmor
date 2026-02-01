@@ -14,7 +14,7 @@ const solutionElements = [
 
 export function EngineeringServicesRight() {
   return (
-    <section className="relative w-full bg-gray-50 py-20 px-4 md:px-10">
+    <section className="relative w-full bg-gray-50 px-6 md:px-12 py-6 md:py-12">
       <div className="mx-auto container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <div>
@@ -23,28 +23,28 @@ export function EngineeringServicesRight() {
           </h2>
 
           <div className="mb-8">
-            <h3 className="mb-3 text-lg font-semibold text-gray-800">
+            <h3 className="mb-3 text-lg sm:text-xl font-semibold text-gray-800">
               Переваги комплексного рішення
             </h3>
             <ul className="space-y-2 text-sm md:text-base text-gray-600">
               {solutionAdvantages.map((item, idx) => (
                 <li key={idx} className="flex gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-600" />
-                  <span>{item}</span>
+                  <span className="text-base sm:text-lg">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold text-gray-800">
+            <h3 className="mb-3 text-lg sm:text-xl font-semibold text-gray-800">
               Основні елементи конструкції
             </h3>
             <ul className="space-y-2 text-sm md:text-base text-gray-600">
               {solutionElements.map((item, idx) => (
                 <li key={idx} className="flex gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-600" />
-                  <span>{item}</span>
+                  <span className="text-base sm:text-lg">{item}</span>
                 </li>
               ))}
             </ul>
@@ -52,7 +52,7 @@ export function EngineeringServicesRight() {
         </div>
 
         {/* Image */}
-        <div className="relative h-72 md:h-[420px] w-full rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative h-72 md:h-[420px] w-full">
           <Image
             src="/images/engineering-net.webp"
             alt="Сітчаста конструкція захисту"

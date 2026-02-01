@@ -7,9 +7,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className=" w-full relative">
+    <header className="w-full relative">
       {/* TOP DIVIDER */}
-      <div className="w-full bg-neutral-200" />
+      <div className="bg-neutral-200" />
 
       {/* MAIN HEADER */}
       <div className="mx-auto flex container items-center justify-between px-6 py-4">

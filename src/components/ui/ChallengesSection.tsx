@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function ChallengesSection() {
   return (
-    <section className="relative w-full bg-white py-16 px-6 md:px-12">
-      <div className="mx-auto container">
+    <section className="relative w-full bg-white px-6 md:px-12 py-6 md:py-12">
+      <div className="mx-auto max-w-8xl">
         {/* Header */}
         <div className="mb-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-blue-700">
+          <h2 className="font-heading text-2xl md:text-4xl font-bold text-blue-700">
             ВИКЛИКИ І РЕАЛЬНІСТЬ
           </h2>
           <div className="mt-2 h-1 w-32 bg-blue-600 rounded-full" />
@@ -16,7 +16,7 @@ export default function ChallengesSection() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 items-center">
           {/* Left: Image */}
           <div className="relative flex justify-center">
-            <div className="relative w-full max-w-xl aspect-[2] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full max-w-xl aspect-[2]">
               <Image
                 src="/images/protection.webp"
                 alt="Захисна сітка та конструкція"
@@ -58,10 +58,10 @@ export default function ChallengesSection() {
 
         {/* Bottom Description */}
         <div className="mt-12 rounded-2xl bg-gray-50 p-6 md:p-10 shadow-inner space-y-6">
-          <h3 className="font-heading text-3xl md:text-4xl font-semibold text-blue-700 leading-tight text-center">
+          <h3 className="font-heading text-3xl md:text-4xl font-semibold text-blue-700 leading-tight text-left sm:text-center">
             Щодо об'єкта (території) промисловості категорії
           </h3>
-          <p className="text-sm md:text-lg text-gray-800 leading-relaxed text-left max-w-5xl mx-auto">
+          <p className="text-base md:text-lg text-gray-800 leading-relaxed text-left max-w-6xl mx-auto">
             Оснащення об'єкта засобами виявлення (візуальними та акустичними), пасивного захисту
             (сітчасті огорожі, екрани, навіси, габіони), радіоелектронної боротьби (засобами
             придушення або перетворення електромагнітних випромінювань і сигналів дистанційного

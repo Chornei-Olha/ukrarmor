@@ -32,7 +32,7 @@ const stateFocus = [
 
 function Card({ title, image }: { title: string; image: string }) {
   return (
-    <div className="group relative rounded-2xl overflow-hidden shadow-lg bg-white transition-transform hover:-translate-y-1">
+    <div className="group relative rounded-xl overflow-hidden shadow-lg bg-white transition-transform hover:-translate-y-1">
       <div className="relative h-44 w-full">
         <Image
           src={image}
@@ -44,7 +44,7 @@ function Card({ title, image }: { title: string; image: string }) {
       </div>
 
       <div className="p-4">
-        <h3 className="text-center text-sm md:text-base font-semibold text-blue-700">{title}</h3>
+        <h3 className="text-center text-base md:text-lg font-semibold text-blue-700">{title}</h3>
       </div>
     </div>
   );
@@ -52,10 +52,10 @@ function Card({ title, image }: { title: string; image: string }) {
 
 export default function PriorityObjectsSection() {
   return (
-    <section className="relative w-full bg-gray-100 py-20 px-4 md:px-10">
+    <section className="relative w-full bg-gray-100 px-6 md:px-12 py-6 md:py-12">
       <div className="mx-auto container">
         {/* Header */}
-        <div className="mb-14 text-center">
+        <div className="mb-14 text-left sm:text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-blue-700">
             Пріоритетні типи обʼєктів, що підлягають захисту
           </h2>

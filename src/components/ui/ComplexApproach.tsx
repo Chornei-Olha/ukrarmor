@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function ComplexApproach() {
   return (
-    <section className="w-full py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="font-heading text-2xl md:text-3xl font-semibold text-blue-700 mb-12">
+    <section className="w-full px-6 md:px-12 py-6 md:py-12">
+      <div className="container mx-auto">
+        <h2 className="font-heading text-3xl md:text-4xl font-semibold text-blue-700 mb-12 max-w-5xl sm:mx-auto text-left sm:text-center">
           Комплексний підхід до розрахункового обґрунтування міцності
         </h2>
 
@@ -41,7 +41,7 @@ export default function ComplexApproach() {
             <div className="font-body text-gray-800">
               <span className="font-semibold">3.</span> Проведено натурні випробування на
               випробувальному стенді
-              <ul className="list-disc pl-6 mt-2 space-y-1 text-sm text-gray-600">
+              <ul className="list-disc pl-6 mt-2 space-y-1 text-base sm:text-lg text-gray-600">
                 <li>Визначено монтажні провисання та зусилля</li>
                 <li>Обрано спосіб кріплення сіток до канатних гілок</li>
                 <li>Визначено оптимальні розміри конструктивної комірки</li>
@@ -59,12 +59,12 @@ export default function ComplexApproach() {
 
           {/* ROW 4 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
-            <div className="font-body text-gray-800">
+            <div className="font-body text-base sm:text-lg  text-gray-800">
               <span className="font-semibold">4.</span> Виконано верифікацію розрахункових методик
               за результатами натурних експериментів
             </div>
             {/* CTA */}
-            <div className="bg-blue-700 text-white font-heading text-center py-4 rounded-md">
+            <div className="bg-blue-700 text-white text-base sm:text-lg text-center py-4 rounded-md">
               Випробування підтвердили розрахункові характеристики конструкції
             </div>{' '}
           </div>

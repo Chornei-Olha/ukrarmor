@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function CableProtectionSection() {
   return (
-    <section className="relative w-full bg-white py-16 px-4 md:px-10">
-      <div className="mx-auto max-w-8xl">
+    <section className="relative w-full bg-white px-6 md:px-12 py-6 md:py-12">
+      <div className="mx-auto container">
         {/* Header */}
         <div className="mb-10">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-blue-700 max-w-4xl">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-blue-700 max-w-5xl sm:mx-auto text-left sm:text-center">
             Тросова система захисту — найбільш застосовуване рішення для захисту від БПЛА
           </h2>
         </div>
@@ -15,11 +15,11 @@ export default function CableProtectionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text */}
           <div className="bg-gray-50 rounded-2xl shadow-lg p-6 md:p-8">
-            <h3 className="text-lg md:text-xl font-semibold text-blue-700 mb-4">
+            <h3 className="text-base md:text-lg font-semibold text-blue-700 mb-4">
               Тросова система захисту
             </h3>
 
-            <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+            <p className="text-gray-700  text-base md:text-lg">
               є «традиційним» методом, який довгий час вважався єдино правильним і надійним
               рішенням.
               <br />

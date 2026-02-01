@@ -27,8 +27,8 @@ export default function HeroBPLA() {
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center">
-        <div className="mx-auto container px-6">
-          <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+        <div className="mx-auto container px-6 md:px-12 py-6 md:py-12">
+          <h2 className="font-heading text-4xl md:text-7xl font-bold text-white leading-tight">
             Інженерні рішення
             <br />
             від атак БПЛА
@@ -40,7 +40,7 @@ export default function HeroBPLA() {
           </p> */}
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="rounded-2xl bg-blue-600 px-8 py-4 text-white font-semibold hover:bg-blue-700 transition">
+            <button className="text-base md:text-lg rounded-2xl bg-blue-600 px-8 py-4 text-white font-semibold hover:bg-blue-700 transition">
               Отримати консультацію
             </button>
 
