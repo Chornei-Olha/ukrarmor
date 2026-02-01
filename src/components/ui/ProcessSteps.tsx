@@ -32,7 +32,7 @@ export default function ProcessSteps() {
     <section className="w-full px-6 md:px-12 py-6 md:py-12">
       <div className="container mx-auto">
         {/* Heading */}
-        <h2 className="font-heading text-2xl md:text-3xl font-semibold text-blue-700 mb-4 max-w-5xl sm:mx-auto text-left sm:text-center">
+        <h2 className="font-heading text-3xl md:text-4xl font-semibold text-blue-700 mb-4 max-w-5xl sm:mx-auto text-left sm:text-center">
           «Ukrarmor» — ваш надійний технічний партнер для захисту від БПЛА
         </h2>
 
