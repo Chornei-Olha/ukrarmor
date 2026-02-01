@@ -31,7 +31,7 @@ export const metadata = {
     url: 'https://ukrarmor.vercel.app/', // сюда ссылку на сайт
     images: [
       {
-        url: 'https://art-posure.vercel.app/images/logo.png', // абсолютный путь
+        url: 'https://ukrarmor.vercel.app/images/logo.png', // абсолютный путь
         width: 1200,
         height: 630,
         alt: 'Ukrarmor Logo',
