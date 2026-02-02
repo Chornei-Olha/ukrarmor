@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Ukrarmor',
   description: 'Protection from drones',
   icons: {
-    icon: [{ url: '/images/logo.png' }],
+    icon: [{ url: '/images/logo-s.webp' }],
   },
   openGraph: {
     title: 'Ukrarmor',
@@ -31,7 +31,7 @@ export const metadata = {
     url: 'https://ukrarmor.vercel.app/', // сюда ссылку на сайт
     images: [
       {
-        url: 'https://ukrarmor.vercel.app/images/logo.png', // абсолютный путь
+        url: 'https://ukrarmor.vercel.app/images/logo-s.webp', // абсолютный путь
         width: 1200,
         height: 630,
         alt: 'Ukrarmor Logo',
