@@ -15,14 +15,14 @@ export default function Header() {
       <div className="mx-auto flex container items-center justify-between px-6 py-4">
         {/* LOGO */}
         <a href="/" className="mr-auto flex items-center gap-3">
-          <Image src="/images/logo.png" alt="logo" width={60} height={60} priority />
+          <Image src="/images/logo-s.webp" alt="logo" width={60} height={60} priority />
           <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
         </a>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-8 font-roboto text-[18px] uppercase leading-none">
           <a href="/">Home</a>
-          <a href="/gallery">Gallery</a>
+          {/* <a href="/gallery">Gallery</a> */}
         </nav>
 
         {/* BURGER BUTTON */}
@@ -54,9 +54,9 @@ export default function Header() {
           <a href="/" onClick={() => setOpen(false)}>
             Home
           </a>
-          <a href="/gallery" onClick={() => setOpen(false)}>
+          {/* <a href="/gallery" onClick={() => setOpen(false)}>
             Gallery
-          </a>
+          </a> */}
         </nav>
       </div>
 

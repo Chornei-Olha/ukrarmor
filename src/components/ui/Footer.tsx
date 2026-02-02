@@ -9,9 +9,9 @@ export default function Footer() {
           {/* COLUMN 1 */}
           <div className="flex items-center justify-center md:items-start md:justify-start">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-s.webp"
               alt="logo"
-              width={150}
+              width={100}
               height={100}
               className="opacity-80"
             />
@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* COLUMN 2 */}
           <div className="font-roboto text-[16px] leading-[130%]">
-            <a href="/" className="block mb-3">
+            {/* <a href="/" className="block mb-3">
               Home
             </a>
             <a href="/gallery" className="block mb-3">
@@ -30,7 +30,7 @@ export default function Footer() {
             </a>
             <a href="#" className="block">
               Terms & Conditions
-            </a>
+            </a> */}
           </div>
 
           {/* COLUMN 3 */}

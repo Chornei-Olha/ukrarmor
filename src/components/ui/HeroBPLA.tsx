@@ -5,7 +5,7 @@ export default function HeroBPLA() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/drone-flying.webp"
+        src="/images/TTPP.webp"
         alt="Інженерні рішення від атак БПЛА"
         fill
         priority
