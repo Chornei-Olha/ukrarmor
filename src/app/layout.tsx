@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/index.css';
 import { Cormorant, Anonymous_Pro } from 'next/font/google';
+import Header from '@/components/ui/Header';
+import Footer from '@/components/ui/Footer';
 
 const headingFont = Cormorant({
   subsets: ['latin', 'cyrillic'],
@@ -49,7 +51,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk" className={`${headingFont.variable} ${bodyFont.variable}`}>
-      <body className="font-body">{children}</body>
+      <body className="font-body flex flex-col min-h-screen">
+        <Header />
+
+        <main className="flex-1">{children}</main>
+
+        <Footer />
+      </body>
     </html>
   );
 }

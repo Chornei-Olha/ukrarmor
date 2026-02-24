@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Header from '../components/ui/Header';
 import HeroSection from '../components/ui/Hero';
 import ChallengesSection from '../components/ui/ChallengesSection';
 import HeroBPLA from '../components/ui/HeroBPLA';
@@ -14,12 +13,10 @@ import StrengthCalculation from '../components/ui/StrengthCalculation';
 import ComplexApproach from '../components/ui/ComplexApproach';
 import ProcessSteps from '../components/ui/ProcessSteps';
 import CableProtectionSection from '../components/ui/CableProtectionSection';
-import Footer from '../components/ui/Footer';
 
 const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen font-inter overflow-x-hidden">
-      <Header />
       <HeroSection />
       <ChallengesSection />
       <HeroBPLA />
@@ -33,7 +30,6 @@ const LandingPage: React.FC = () => {
       <StrengthCalculation />
       <ComplexApproach />
       <ProcessSteps />
-      <Footer />
     </div>
   );
 };
