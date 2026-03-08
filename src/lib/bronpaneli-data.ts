@@ -58,12 +58,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'panel-beton-zalivna-zvarne-kriplennya',
         title: 'Панель бетонно-заливна зі зварним кріпленням',
-        image: '/images/products/panel-1/main.webp',
-        gallery: [
-          '/images/products/panel-1/main.webp',
-          '/images/products/panel-1/2.webp',
-          '/images/products/panel-1/3.webp',
-        ],
+        image: '/images/products/panel-1/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
         breakInClass: '1',
         bulletClass: '1',
@@ -107,13 +103,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'betonno-zalivna-panel-zvarne-kriplennya-2',
         title: 'Бетонно заливна панель зі зварним кріпленням',
-        image: '/images/products/panel-2/main.webp',
-        gallery: [
-          '/images/products/panel-2/main.webp',
-          // добавишь фото если есть:
-          // '/images/products/panel-2/2.webp',
-          // '/images/products/panel-2/3.webp',
-        ],
+        image: '/images/products/panel-2/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -170,13 +161,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'betonna-zalivna-panel-iz-zvarnym-kriplennyam',
         title: 'Бетонна заливна панель із зварним кріпленням',
-        image: '/images/products/panel-3/main.webp',
-        gallery: [
-          '/images/products/panel-3/main.webp',
-          // если есть еще фото — добавишь:
-          // '/images/products/panel-3/2.webp',
-          // '/images/products/panel-3/3.webp',
-        ],
+        image: '/images/products/panel-3/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -233,13 +219,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'betonno-zalivna-panel-zvarnoho-typu-kriplennya',
         title: 'Бетонно-заливна панель зварного типу кріплення',
-        image: '/images/products/panel-4/main.webp',
-        gallery: [
-          '/images/products/panel-4/main.webp',
-          // при необходимости добавишь:
-          // '/images/products/panel-4/2.webp',
-          // '/images/products/panel-4/3.webp',
-        ],
+        image: '/images/products/panel-4/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -296,11 +277,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'metalo-betonno-panel-zi-zvarnym-ziednannyam',
         title: "Метало-бетонна панель зі зварним з'єднанням",
-        image: '/images/products/panel-5/main.webp',
-        gallery: [
-          '/images/products/panel-5/main.webp',
-          // при необходимости добавишь другие фото
-        ],
+        image: '/images/products/panel-5/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -357,11 +335,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'paneli-betonno-zalivni-br-2',
         title: 'Панелі бетонно-заливні Бр-2',
-        image: '/images/products/panel-6/main.webp',
-        gallery: [
-          '/images/products/panel-6/main.webp',
-          // если есть дополнительные фото — добавишь сюда
-        ],
+        image: '/images/products/panel-6/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -418,11 +393,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'paneli-betonno-zalivni-br-3',
         title: 'Панелі бетонно-заливні Бр-3',
-        image: '/images/products/panel-7/main.webp',
-        gallery: [
-          '/images/products/panel-7/main.webp',
-          // при необходимости добавишь дополнительные фото
-        ],
+        image: '/images/products/panel-7/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -479,11 +451,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'paneli-betonno-zalivni-br-4',
         title: 'Панелі бетонно-заливні Бр-4',
-        image: '/images/products/panel-8/main.webp',
-        gallery: [
-          '/images/products/panel-8/main.webp',
-          // если есть дополнительные фото — добавь сюда
-        ],
+        image: '/images/products/panel-8/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '4',
@@ -540,11 +509,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'paneli-betonno-zalivni-br-5',
         title: 'Панелі бетонно-заливні Бр-5',
-        image: '/images/products/panel-9/main.webp',
-        gallery: [
-          '/images/products/panel-9/main.webp',
-          // при необходимости добавь дополнительные фото
-        ],
+        image: '/images/products/panel-9/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '5',
@@ -680,11 +646,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'panel-betonno-zalivna-z-boltovym-ziednannyam',
         title: "Панель бетонно-заливна з болтовим з'єднанням",
-        image: '/images/products/bolt-1/main.webp',
-        gallery: [
-          '/images/products/bolt-1/main.webp',
-          // добавишь дополнительные фото при необходимости
-        ],
+        image: '/images/products/bolt-1/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -737,11 +700,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'bronepanel-z-betonnym-zapovnennyam-ta-boltovym-ziednannyam',
         title: 'Бронепанель з бетонним заповненням та болтовим з’єднанням',
-        image: '/images/products/bolt-2/main.webp',
-        gallery: [
-          '/images/products/bolt-2/main.webp',
-          // добавь другие фото при необходимости
-        ],
+        image: '/images/products/bolt-2/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -796,11 +756,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'betonno-zalivna-panel-z-boltovym-ziednannyam',
         title: "Бетонно-заливна панель з болтовим з'єднанням",
-        image: '/images/products/bolt-3/main.webp',
-        gallery: [
-          '/images/products/bolt-3/main.webp',
-          // добавишь другие фото если нужно
-        ],
+        image: '/images/products/bolt-3/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -855,8 +812,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'panel-metalo-betonni-z-boltovym-ziednannyam',
         title: "Панель метало-бетонна з болтовим з'єднанням",
-        image: '/images/products/bolt-4/main.webp',
-        gallery: ['/images/products/bolt-4/main.webp'],
+        image: '/images/products/bolt-4/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -911,8 +868,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'metalobetonni-panel-z-boltovym-ziednannyam',
         title: "Металобетонна панель з болтовим з'єднанням",
-        image: '/images/products/bolt-5/main.webp',
-        gallery: ['/images/products/bolt-5/main.webp'],
+        image: '/images/products/bolt-5/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -1031,8 +988,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-bronepanel-zi-zvarnym-ziednannyam',
         title: "Сендвіч бронепанель зі зварним з'єднанням",
-        image: '/images/products/sandwich-welded-1/main.webp',
-        gallery: ['/images/products/sandwich-welded-1/main.webp'],
+        image: '/images/products/sandwich-welded-1/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1088,8 +1045,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'bronepanel-sendvich-typu-zi-zvarnym-ziednannyam',
         title: 'Бронепанель сендвіч типу зі зварним з’єднанням',
-        image: '/images/products/sandwich-welded-2/main.webp',
-        gallery: ['/images/products/sandwich-welded-2/main.webp'],
+        image: '/images/products/sandwich-welded-2/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1146,8 +1103,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'zvarna-sendvich-bronepanel',
         title: 'Зварна сендвіч бронепанель',
-        image: '/images/products/sandwich-welded-3/main.webp',
-        gallery: ['/images/products/sandwich-welded-3/main.webp'],
+        image: '/images/products/sandwich-welded-3/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -1204,8 +1161,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'polehshena-sendvich-bronepanel-zvarna-br-1',
         title: 'Полегшена (сендвіч) бронепанель зварна Бр-1',
-        image: '/images/products/sandwich-welded-4/main.webp',
-        gallery: ['/images/products/sandwich-welded-4/main.webp'],
+        image: '/images/products/sandwich-welded-4/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1273,8 +1230,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-panel-zvarna-br-3',
         title: 'Сендвіч панель зварна Бр-3',
-        image: '/images/products/sandwich-welded-5/main.webp',
-        gallery: ['/images/products/sandwich-welded-5/main.webp'],
+        image: '/images/products/sandwich-welded-5/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -1382,8 +1339,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-bronepaneli-z-boltovym-ziednannyam',
         title: "Сендвіч бронепанелі з болтовим з'єднанням",
-        image: '/images/products/sandwich-bolt-1/main.webp',
-        gallery: ['/images/products/sandwich-bolt-1/main.webp'],
+        image: '/images/products/sandwich-bolt-1/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1453,8 +1410,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-bronepanel-boltovoho-ziednannya',
         title: 'Сендвіч бронепанель болтового з’єднання',
-        image: '/images/products/sandwich-bolt-2/main.webp',
-        gallery: ['/images/products/sandwich-bolt-2/main.webp'],
+        image: '/images/products/sandwich-bolt-2/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -1523,8 +1480,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-paneli-boltovi-br-1',
         title: 'Сендвіч-панелі болтові Бр-1',
-        image: '/images/products/sandwich-bolt-3/main.webp',
-        gallery: ['/images/products/sandwich-bolt-3/main.webp'],
+        image: '/images/products/sandwich-bolt-3/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -1596,8 +1553,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-paneli-boltovi-br-2',
         title: 'Сендвіч-панелі болтові Бр-2',
-        image: '/images/products/sandwich-bolt-4/main.webp',
-        gallery: ['/images/products/sandwich-bolt-4/main.webp'],
+        image: '/images/products/sandwich-bolt-4/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1669,7 +1626,7 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'bronepanel-sendvich-konstrukcii-boltovogo-tipu',
         title: 'Бронепанель сендвіч конструкції болтового типу',
-        image: '/images/products/sandwich-bolt-5/main.webp',
+        image: '/images/products/sandwich-bolt-5/main.png',
         gallery: ['/images/products/sandwich-bolt-5/main.webp'],
         priceText: 'Ціна за запитом',
 
@@ -1742,8 +1699,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'sendvich-paneli-boltovi-br-3',
         title: 'Сендвіч-панелі болтові Бр-3',
-        image: '/images/products/sandwich-bolt-6/main.webp',
-        gallery: ['/images/products/sandwich-bolt-6/main.webp'],
+        image: '/images/products/sandwich-bolt-6/main.png',
+        gallery: [],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -1870,8 +1827,8 @@ export const bronpaneliCategories: Category[] = [
         slug: 'zakhysni-paneli-br-1-zakhyst-vid-zlomu-1',
         title:
           "Захисні панелі Бр 1, Захист від злому 1 (полегшені, болтове з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-1/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-1/main.webp'],
+        image: '/images/products/zakhysni-paneli-1/main.png',
+        gallery: ['/images/products/zakhysni-paneli-1/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1928,8 +1885,8 @@ export const bronpaneliCategories: Category[] = [
         slug: 'zakhysni-paneli-br-1-zakhyst-vid-zlomu-zvarne',
         title:
           "Захисні панелі Бр 1, Захист від злому (полегшені, зварне з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-2/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-2/main.webp'],
+        image: '/images/products/zakhysni-paneli-2/main.png',
+        gallery: ['/images/products/zakhysni-paneli-2/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
@@ -1986,8 +1943,8 @@ export const bronpaneliCategories: Category[] = [
         slug: 'zakhysni-paneli-br-2-boltove',
         title:
           "Захисні панелі Бр 2, Захист від злому (полегшені, болтове з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-3/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-3/main.webp'],
+        image: '/images/products/zakhysni-paneli-3/main.jpeg',
+        gallery: ['/images/products/zakhysni-paneli-3/main-2.webp'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -2044,8 +2001,8 @@ export const bronpaneliCategories: Category[] = [
         slug: 'zakhysni-paneli-br-3-zakhyst-vid-zlomu-2-zvarne',
         title:
           "Захисні панелі Бр 3, Захист від злому 2 (бетонні, зварне з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-4/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-4/main.webp'],
+        image: '/images/products/zakhysni-paneli-4/main.jpeg',
+        gallery: ['/images/products/zakhysni-paneli-4/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '2',
@@ -2103,8 +2060,8 @@ export const bronpaneliCategories: Category[] = [
         slug: 'zakhysni-paneli-br-3-zakhyst-vid-zlomu-3-zvarne',
         title:
           "Захисні панелі Бр 3, Захист від злому 3 (бетонні, зварне з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-5/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-5/main.webp'],
+        image: '/images/products/zakhysni-paneli-5/main.jpeg',
+        gallery: ['/images/products/zakhysni-paneli-5/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '3',
@@ -2161,8 +2118,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'zakhysni-paneli-br-4-vybukhostiiki',
         title: 'Захисні панелі Бр 4, вибухостійкі',
-        image: '/images/products/zakhysni-paneli-6/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-6/main.webp'],
+        image: '/images/products/zakhysni-paneli-6/main.png',
+        gallery: ['/images/products/zakhysni-paneli-6/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '4',
@@ -2216,8 +2173,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'zakhysni-paneli-br-5-betonni-zvarne',
         title: "Захисні панелі Бр 5 (бетонні, зварне з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-7/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-7/main.webp'],
+        image: '/images/products/zakhysni-paneli-7/main.png',
+        gallery: ['/images/products/zakhysni-paneli-7/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '5',
@@ -2274,8 +2231,8 @@ export const bronpaneliCategories: Category[] = [
       {
         slug: 'paneli-zakhysni-br-1-betonni-zvarne',
         title: "Панелі захисні БР 1 (бетонні, зварне з'єднання, фарбування ґрунтовкою)",
-        image: '/images/products/zakhysni-paneli-8/main.webp',
-        gallery: ['/images/products/zakhysni-paneli-8/main.webp'],
+        image: '/images/products/zakhysni-paneli-8/main.jpg',
+        gallery: ['/images/products/zakhysni-paneli-8/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
