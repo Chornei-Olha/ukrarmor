@@ -17,6 +17,7 @@ export type Product = {
 export type Category = {
   slug: string;
   title: string;
+  image: string;
   descriptionHtml?: string; // большой текст под сеткой (для категории)
   products: Product[];
 };
@@ -25,6 +26,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'beton-zalivni-zvarni',
     title: 'Бронепанелі бетонно-заливні зварні',
+    image: '/images/products/panel-1/main.png',
     descriptionHtml: `
       <h2>Бронепанелі бетонно-заливні зварні</h2>
       <p>Промислове підприємство «UKRARMOR» розробляє і випускає броньовані метало-бетонні панелі зі зварним типом з'єднання...</p>
@@ -570,7 +572,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'metalo-betonni-z-boltovym-ziednannyam',
     title: "Панелі метало-бетонні з болтовим з'єднанням",
-
+    image: '/images/products/bolt-1/main.png',
     descriptionHtml: `
     <h2>Панелі метало-бетонні з болтовим з'єднанням</h2>
 
@@ -927,7 +929,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'sendvich-bronepaneli-zvarni',
     title: 'Сендвіч бронепанелі зварні',
-
+    image: '/images/products/sandwich-welded-1/main.png',
     descriptionHtml: `
     <h2>Сендвіч бронепанелі зварні</h2>
 
@@ -1289,7 +1291,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'sendvich-bronepaneli-boltovi',
     title: 'Сендвіч бронепанелі болтові',
-
+    image: '/images/products/sandwich-bolt-1/main.png',
     descriptionHtml: `
     <h2>Сендвіч бронепанелі болтові</h2>
 
@@ -1774,7 +1776,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'zakhysni-paneli',
     title: 'Захисні панелі',
-
+    image: '/images/products/zakhysni-paneli-1/main.png',
     descriptionHtml: `
     <h2>Захисні панелі</h2>
 
@@ -2289,9 +2291,10 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'kulestiiki-bronovani-paneli',
     title: 'Кулестійкі броньовані панелі',
+    image: '/images/products/kulbr-paneli-1/main.png',
+
     descriptionHtml: `
     <h2>Кулестійкі броньовані панелі</h2>
-
     <p>
       Потрібно надійно захистити співробітників і майно від зловмисників?
       У цьому допоможуть бронепанелі від компанії «UKRARMOR» — вироби впораються
@@ -2378,6 +2381,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'zlamostiiki-bronepaneli',
     title: 'Зламостійкі бронепанелі',
+    image: '/images/products/zlms-paneli-1/main.png',
     descriptionHtml: `
     <h2>Зламостійкі бронепанелі</h2>
 
@@ -2454,6 +2458,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-1-klasu',
     title: 'Броньовані панелі 1 класу',
+    image: '/images/products/zlms-paneli-1/main-3.png',
     descriptionHtml: `
     <h2>Броньовані панелі 1 класу</h2>
 
@@ -2551,6 +2556,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-2-klasu',
     title: 'Броньовані панелі 2 класу',
+    image: '/images/products/zlms-paneli-1/main-4.png',
     descriptionHtml: `
     <h2>Броньовані панелі 2 класу</h2>
 
@@ -2648,6 +2654,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-3-klasu',
     title: 'Броньовані панелі 3 класу',
+    image: '/images/products/zlms-paneli-1/main-5.png',
     descriptionHtml: `
     <h2>Броньовані панелі 3 класу</h2>
 
@@ -2746,6 +2753,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-4-klasu',
     title: 'Броньовані панелі 4 класу',
+    image: '/images/products/zlms-paneli-1/main-6.png',
     descriptionHtml: `
     <h2>Броньовані панелі 4 класу</h2>
 
@@ -2843,6 +2851,7 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-5-klasu',
     title: 'Броньовані панелі 5 класу',
+    image: '/images/products/zlms-paneli-1/main-7.png',
     descriptionHtml: `
     <h2>Броньовані панелі 5 класу</h2>
 
