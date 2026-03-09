@@ -21,7 +21,34 @@ export default function BplaCategoryPage({ params }: { params: { categorySlug: s
         <CategorySidebar />
 
         {/* RIGHT */}
+        {/* RIGHT */}
         <div className="space-y-14">
+          {/* CATEGORY DESCRIPTION */}
+          {category.descriptionHtml && (
+            <section className="max-w-4xl prose prose-neutral">
+              <div dangerouslySetInnerHTML={{ __html: category.descriptionHtml }} />
+            </section>
+          )}
+
+          {/* CATEGORY GALLERY */}
+          {category.gallery && category.gallery.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+              {category.gallery.map((img, index) => (
+                <div
+                  key={index}
+                  className="relative h-56 overflow-hidden rounded-2xl border border-neutral-200 bg-white"
+                >
+                  <Image
+                    src={img}
+                    alt={`${category.title} ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* PRODUCTS GRID */}
           {products.length > 0 && (
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -57,13 +84,6 @@ export default function BplaCategoryPage({ params }: { params: { categorySlug: s
                 </Link>
               ))}
             </div>
-          )}
-
-          {/* CATEGORY DESCRIPTION UNDER GRID */}
-          {category.descriptionHtml && (
-            <section className="max-w-4xl prose prose-neutral">
-              <div dangerouslySetInnerHTML={{ __html: category.descriptionHtml }} />
-            </section>
           )}
         </div>
       </div>

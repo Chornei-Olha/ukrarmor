@@ -40,6 +40,31 @@ export default function ZakhystVidBplaPage() {
                 href={`/catalog/zakhyst-vid-bpla/${item.slug}`}
                 className="group"
               >
+                <div className="relative h-64 overflow-hidden rounded-2xl shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-black/35 transition-colors duration-300 group-hover:bg-black/45" />
+
+                  <div className="absolute inset-x-0 bottom-0 p-5">
+                    <p className="text-lg font-semibold leading-snug text-white">{item.title}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+            {bplaCategories.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/catalog/zakhyst-vid-bpla/${item.slug}`}
+                className="group"
+              >
                 <div className="bg-yellow-400 p-4 rounded-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                   <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                     <Image
@@ -53,7 +78,7 @@ export default function ZakhystVidBplaPage() {
                 </div>
               </Link>
             ))}
-          </div>
+          </div> */}
 
           {/* TEXT (весь текст с твоего сообщения) */}
           <section className="max-w-4xl">

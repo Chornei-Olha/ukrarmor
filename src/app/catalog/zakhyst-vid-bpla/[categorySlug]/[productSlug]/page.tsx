@@ -48,6 +48,24 @@ export default function BplaProductPage({
             />
           </div>
 
+          {product.gallery && product.gallery.length > 0 && (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {product.gallery.map((img, index) => (
+                <div
+                  key={index}
+                  className="relative h-32 md:h-40 overflow-hidden rounded-xl border border-neutral-200 bg-white"
+                >
+                  <Image
+                    src={img}
+                    alt={`${product.title} ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* PRICE */}
           <div className="text-sm text-neutral-700">
             <span className="font-semibold">Ціна: </span>

@@ -1,16 +1,18 @@
 export type BplaProduct = {
   slug: string;
   title: string;
+  image?: string;
+  gallery?: string[];
   descriptionHtml: string;
   price?: string | number;
-  image?: string;
 };
 
 export type BplaCategory = {
   slug: string;
   title: string;
-  image?: string; // положишь картинки в /public/images/...
+  image?: string;
   short?: string;
+  gallery?: string[];
   descriptionHtml?: string;
   products?: BplaProduct[];
 };
@@ -19,6 +21,7 @@ export const bplaCategories: BplaCategory[] = [
   {
     slug: 'stacionarni-ukryttya-vid-bpla',
     title: "Пасивний захист об'єктів від атак дронів",
+    image: '/images/zahyst/passive-2/main.jpg',
     descriptionHtml: `
     <h2>Пасивний захист об'єктів від атак дронів</h2>
 
@@ -157,6 +160,15 @@ export const bplaCategories: BplaCategory[] = [
       {
         slug: 'zakhyst-vid-bpla-sitkova-konstruktsiya-3d-parkan',
         title: 'Захист від БПЛА (Сітчаста конструкція 3D паркан)',
+        image: '/images/zahyst/passive-1/main.png',
+        gallery: [
+          '/images/zahyst/passive-1/main-2.png',
+          '/images/zahyst/passive-1/main-3.png',
+          '/images/zahyst/passive-1/main-4.png',
+          '/images/zahyst/passive-1/main-5.png',
+          '/images/zahyst/passive-1/main-6.png',
+          '/images/zahyst/passive-1/main-7.png',
+        ],
         descriptionHtml: `
     <h2>Захист від БПЛА (Сітчаста конструкція 3D паркан)</h2>
 
@@ -243,6 +255,8 @@ export const bplaCategories: BplaCategory[] = [
         slug: 'zakhysnyy-komplekt-dlya-okhorony-palyvnykh-rezervuariv',
         title:
           'Захисний комплект для всебічної охорони паливних резервуарів від ударів FPV-дронів та БПЛА літакового типу',
+        image: '/images/zahyst/passive-2/main.jpg',
+        gallery: ['/images/zahyst/passive-2/main-2.jpg'],
         descriptionHtml: `
     <h2>
       Захисний комплект для всебічної охорони паливних резервуарів від ударів FPV-дронів та БПЛА літакового типу
@@ -317,6 +331,7 @@ export const bplaCategories: BplaCategory[] = [
         slug: 'zakhysnyy-komplekt-dlya-okhorony-sylovykh-transformatoriv',
         title:
           'Захисний комплект для всебічної охорони силових трансформаторів від ударів FPV-дронів та БПЛА літакового типу',
+        image: '/images/zahyst/passive-3/main.png',
         descriptionHtml: `
     <h2>
       Захисний комплект для всебічної охорони силових трансформаторів від ударів FPV-дронів та БПЛА літакового типу
@@ -389,6 +404,22 @@ export const bplaCategories: BplaCategory[] = [
       {
         slug: 'zakhysna-ogorodzhuvalna-konstruktsiya-dlya-azs-ta-rgs',
         title: 'Захисна огороджувальна конструкція для АЗС та РГС',
+        image: '/images/zahyst/passive-4/main.png',
+        gallery: [
+          '/images/zahyst/passive-4/main-2.png',
+          '/images/zahyst/passive-4/main-3.png',
+          '/images/zahyst/passive-4/main-4.png',
+          '/images/zahyst/passive-4/main-5.png',
+          '/images/zahyst/passive-4/main-6.png',
+          '/images/zahyst/passive-4/main-7.png',
+          '/images/zahyst/passive-4/main-8.png',
+          '/images/zahyst/passive-4/main-9.png',
+          '/images/zahyst/passive-4/main-10.png',
+          '/images/zahyst/passive-4/main-11.png',
+          '/images/zahyst/passive-4/main-12.png',
+          '/images/zahyst/passive-4/main-13.png',
+          '/images/zahyst/passive-4/main-14.png',
+        ],
         descriptionHtml: `
     <h2>Захисна огороджувальна конструкція для АЗС та РГС</h2>
 
@@ -448,6 +479,12 @@ export const bplaCategories: BplaCategory[] = [
   {
     slug: 'shvydkomontovani-ukryttya-vid-bpla',
     title: 'Швидкомонтовані укриття від БПЛА',
+    gallery: [
+      '/images/zahyst/shvydkomontovani-ukryttya/main.png',
+      '/images/zahyst/shvydkomontovani-ukryttya/main-2.png',
+      '/images/zahyst/shvydkomontovani-ukryttya/main-2.png',
+      '/images/zahyst/shvydkomontovani-ukryttya/main-3.png',
+    ],
     descriptionHtml: `
     <h2>Швидкомонтовані укриття від БПЛА</h2>
 
@@ -564,6 +601,8 @@ export const bplaCategories: BplaCategory[] = [
       {
         slug: 'antydronovyy-shlyakh-zhyttya',
         title: 'Антидроновий шлях життя',
+        image: '/images/zahyst/antidron/main-2.png',
+        gallery: ['/images/zahyst/antidron/main.png', '/images/zahyst/antidron/main-3.png'],
         descriptionHtml: `
     <h2>Антидроновий шлях життя</h2>
 

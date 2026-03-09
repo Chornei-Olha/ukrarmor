@@ -1342,7 +1342,7 @@ export const bronpaneliCategories: Category[] = [
         slug: 'sendvich-bronepaneli-z-boltovym-ziednannyam',
         title: "Сендвіч бронепанелі з болтовим з'єднанням",
         image: '/images/products/sandwich-bolt-1/main.png',
-        gallery: [],
+        gallery: ['/images/products/sandwich-bolt-1/main-2.png'],
         priceText: 'Ціна за запитом',
 
         breakInClass: '1',
