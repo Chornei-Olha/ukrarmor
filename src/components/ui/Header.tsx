@@ -92,19 +92,22 @@ export default function Header() {
         className={`md:hidden fixed inset-0 bg-white transition-transform duration-300 z-40
         ${open ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <nav className="flex flex-col items-center justify-center h-full gap-8 font-roboto text-[24px]">
+        <nav className="flex flex-col items-left justify-center h-full gap-8 font-roboto text-[18px] ml-8">
+          <a href="/" onClick={() => setOpen(false)}>
+            Головна
+          </a>
           <a href="/about" onClick={() => setOpen(false)}>
             Про компанію
           </a>
 
           {/* MOBILE DROPDOWN */}
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-left w-full">
             <button onClick={() => setAboutOpen(!aboutOpen)} className="flex items-center gap-2">
               Каталог
               <span
                 className={`transition-transform duration-300 ${aboutOpen ? 'rotate-180' : ''}`}
               >
-                ▼
+                ▿
               </span>
             </button>
 
@@ -113,7 +116,7 @@ export default function Header() {
                 aboutOpen ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="flex flex-col gap-4 text-[18px] normal-case items-center">
+              <div className="flex flex-col gap-4 text-[16px] normal-case items-left ml-16">
                 <a href="/catalog/bronpaneli" onClick={() => setOpen(false)}>
                   Бронепанелі
                 </a>
