@@ -18,19 +18,6 @@ export default function Hero() {
             Кінетичний захист об'єктів критичної інфраструктури, об'єктів ПЕК та небезпечних
             об'єктів промисловості
           </p>
-          {/* <div className="pt-6">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/images/logo.png"
-                alt="ukrarmor"
-                width={100}
-                height={100}
-                className="object-contain"
-                priority
-              />{' '}
-              <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
-            </div>
-          </div> */}
         </div>
 
         {/* Права частина — картинка */}

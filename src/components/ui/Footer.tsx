@@ -7,14 +7,11 @@ export default function Footer() {
       <div className="mx-auto container px-6 py-8 md:py-12 lg:py-16">
         <div className="grid grid-cols-2 gap-12 md:grid-cols-3">
           {/* COLUMN 1 */}
-          <div className="flex items-center justify-center md:items-start md:justify-start">
-            <Image
-              src="/images/logo-s.webp"
-              alt="logo"
-              width={100}
-              height={100}
-              className="opacity-80"
-            />
+          <div className="flex flex-col items-center justify-center md:items-start md:justify-start">
+            <a href="/" className="mr-auto flex items-center gap-3">
+              <Image src="/images/logo-s.webp" alt="logo" width={60} height={60} priority />
+              <span className="font-heading text-xl font-bold text-gray-900">UkrArmor</span>
+            </a>
           </div>
 
           {/* COLUMN 2 */}
@@ -35,28 +32,22 @@ export default function Footer() {
 
           {/* COLUMN 3 */}
           <div className="space-y-3 font-roboto text-[16px] leading-[130%]">
-            <p className="mb-4 font-medium uppercase">Information</p>
-
-            <p>Ukrarmor</p>
-            {/* <p>Flat 44</p> */}
+            <p className="mb-4 font-medium uppercase">Контакти</p>
 
             <p className="pt-4">
               Phone:{' '}
-              <a href="tel:+447342366339" className="text-blue-600 hover:underline">
-                +380678888888
+              <a href="tel:+380509999514" className="text-blue-600 hover:underline">
+                +38 050 9999 514
               </a>
             </p>
             <p>
-              <a
-                href="mailto:Company@SimpleBrownBox.co.uk"
-                className="text-blue-600 hover:underline"
-              >
-                ukrarmor@gmail.com
+              <a href="mailto:ukrarmor.kiev@ukr.net" className="text-blue-600 hover:underline">
+                ukrarmor.kiev@ukr.net
               </a>
             </p>
 
             {/* SOCIALS */}
-            <div className="flex items-center gap-4 pt-6">
+            {/* <div className="flex items-center gap-4 pt-6">
               <a
                 href="https://wa.me/"
                 target="_blank"
@@ -92,7 +83,7 @@ export default function Footer() {
               >
                 <Image src="/icons/facebook.svg" alt="" width={20} height={20} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -118,7 +109,7 @@ export default function Footer() {
         shadow-[0_0_20px_5px_rgba(59,130,246,0.7)]
         flex items-center justify-center"
       >
-        <a href="tel:+380952185655">
+        <a href="tel:++380509999514">
           <div className="w-full h-full flex items-center justify-center cursor-pointer rounded-full transition-transform active:scale-95">
             <Image
               src="/images/img_phone_call_2_svg.svg"
