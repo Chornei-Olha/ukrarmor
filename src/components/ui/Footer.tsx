@@ -112,6 +112,24 @@ export default function Footer() {
           Chornei Olha
         </a>
       </div>
+      <div
+        className="fixed bottom-5 right-5 z-50 w-16 sm:w-20 lg:w-[98px] h-16 sm:h-20 lg:h-[98px]
+        rounded-full bg-white/10 backdrop-blur-sm
+        shadow-[0_0_20px_5px_rgba(59,130,246,0.7)]
+        flex items-center justify-center"
+      >
+        <a href="tel:+380970144014">
+          <div className="w-full h-full flex items-center justify-center cursor-pointer rounded-full transition-transform active:scale-95">
+            <Image
+              src="/images/img_phone_call_2_svg.svg"
+              alt="Phone Call"
+              width={60}
+              height={60}
+              className="w-12 sm:w-14 lg:w-[60px] h-12 sm:h-14 lg:h-[60px] animate-wiggle"
+            />
+          </div>
+        </a>
+      </div>
     </footer>
   );
 }

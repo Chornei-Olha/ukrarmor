@@ -20,6 +20,8 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-8 font-roboto text-[18px] leading-none relative">
+          <a href="/">Головна</a>
+
           <a href="/about">Про компанію</a>
 
           {/* DROPDOWN */}
@@ -62,7 +64,6 @@ export default function Header() {
             </div>
           </div>
 
-          <a href="/contacts">Контакти</a>
           <a href="/get-quote">Отримати комерційну пропозицію</a>
         </nav>
 
