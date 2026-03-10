@@ -1,11 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) {
+      setAboutOpen(false);
+    }
+  }, [open]);
 
   return (
     <header className="w-full relative z-50">
@@ -89,10 +107,14 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden fixed inset-0 bg-white transition-transform duration-300 z-40
+        className={`max-h-screen md:hidden fixed inset-0 bg-white transition-transform duration-300 z-40
         ${open ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <nav className="flex flex-col items-left justify-center h-full gap-8 font-roboto text-[18px] ml-8">
+        <a href="/" className="justify-center mt-16 mb-16 flex items-center gap-3">
+          <Image src="/images/logo-s.webp" alt="logo" width={40} height={40} priority />
+          <span className="font-heading text-xl font-bold text-gray-900">UkrArmor</span>
+        </a>
+        <nav className="flex flex-col items-left justify-center gap-8 font-roboto text-[18px] ml-8">
           <a href="/" onClick={() => setOpen(false)}>
             Головна
           </a>
@@ -107,7 +129,7 @@ export default function Header() {
               <span
                 className={`transition-transform duration-300 ${aboutOpen ? 'rotate-180' : ''}`}
               >
-                ▿
+                ▾
               </span>
             </button>
 
