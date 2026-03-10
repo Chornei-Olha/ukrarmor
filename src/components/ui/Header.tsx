@@ -52,7 +52,7 @@ export default function Header() {
               <span
                 className={`transition-transform duration-200 ${aboutOpen ? 'rotate-180' : ''}`}
               >
-                ▿
+                ▾
               </span>
             </button>
 
