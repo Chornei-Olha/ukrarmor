@@ -15,7 +15,7 @@ export default function Header() {
         {/* LOGO */}
         <a href="/" className="mr-auto flex items-center gap-3">
           <Image src="/images/logo-s.webp" alt="logo" width={60} height={60} priority />
-          <span className="font-heading text-xl font-bold text-gray-900">UKRARMOR</span>
+          <span className="font-heading text-xl font-bold text-gray-900">UkrArmor</span>
         </a>
 
         {/* DESKTOP NAV */}
