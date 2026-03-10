@@ -54,8 +54,25 @@ export default function CategoryPage({ params }: { params: { categorySlug: strin
 
           {/* CATEGORY DESCRIPTION UNDER GRID */}
           {category.descriptionHtml && (
-            <section className="max-w-4xl prose prose-neutral">
-              <div dangerouslySetInnerHTML={{ __html: category.descriptionHtml }} />
+            <section className="max-w-4xl">
+              <div
+                className="
+        prose
+        prose-gray
+        max-w-none
+        prose-h2:text-3xl
+        prose-h2:font-bold
+        prose-h2:text-gray-900
+        prose-h3:text-xl
+        prose-h3:font-semibold
+        prose-h3:text-gray-900
+        prose-p:text-gray-700
+        prose-p:leading-relaxed
+        prose-ul:list-disc
+        prose-ul:pl-6
+      "
+                dangerouslySetInnerHTML={{ __html: category.descriptionHtml }}
+              />
             </section>
           )}
         </div>
