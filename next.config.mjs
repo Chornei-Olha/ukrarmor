@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
   images: {
-    unoptimized: true, // щоб <Image> працював без оптимізації
+    unoptimized: true,
   },
   productionBrowserSourceMaps: true,
   distDir: process.env.DIST_DIR || '.next',

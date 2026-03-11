@@ -578,7 +578,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="w-full max-h-screen">
+    <section className="w-full">
       <div className="relative overflow-hidden rounded-2xl">
         {/* background */}
         <div className="absolute inset-0 bg-gradient-to-b from-sky-500/75 via-sky-400/55 to-yellow-300/75" />

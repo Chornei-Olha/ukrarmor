@@ -6,6 +6,12 @@ import CategorySidebar from '@/components/bronpaneli/CategorySidebar';
 import ContactForm from '@/components/ui/ContactForm';
 import { bronpaneliCategories } from '@/lib/bronpaneli-data';
 
+export function generateStaticParams() {
+  return bronpaneliCategories.map((category) => ({
+    categorySlug: category.slug,
+  }));
+}
+
 export default function CategoryPage({ params }: { params: { categorySlug: string } }) {
   const category = bronpaneliCategories.find((c) => c.slug === params.categorySlug);
   if (!category) return notFound();

@@ -6,6 +6,15 @@ import CategorySidebar from '@/app/catalog/zakhyst-vid-bpla/components/CategoryS
 import ContactForm from '@/components/ui/ContactForm';
 import { bplaCategories } from '@/lib/zakhyst-bpla';
 
+export function generateStaticParams() {
+  return bplaCategories.flatMap((category) =>
+    (category.products ?? []).map((product) => ({
+      categorySlug: category.slug,
+      productSlug: product.slug,
+    }))
+  );
+}
+
 export default function BplaProductPage({
   params,
 }: {

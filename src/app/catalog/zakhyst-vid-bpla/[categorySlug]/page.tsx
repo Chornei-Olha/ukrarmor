@@ -6,6 +6,12 @@ import CategorySidebar from '@/app/catalog/zakhyst-vid-bpla/components/CategoryS
 import ContactForm from '@/components/ui/ContactForm';
 import { bplaCategories } from '@/lib/zakhyst-bpla';
 
+export function generateStaticParams() {
+  return bplaCategories.map((category) => ({
+    categorySlug: category.slug,
+  }));
+}
+
 export default function BplaCategoryPage({ params }: { params: { categorySlug: string } }) {
   const category = bplaCategories.find((c) => c.slug === params.categorySlug);
   if (!category) return notFound();
@@ -20,7 +26,6 @@ export default function BplaCategoryPage({ params }: { params: { categorySlug: s
         {/* LEFT */}
         <CategorySidebar />
 
-        {/* RIGHT */}
         {/* RIGHT */}
         <div className="space-y-14">
           {/* CATEGORY DESCRIPTION */}
