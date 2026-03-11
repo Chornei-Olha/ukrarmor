@@ -151,22 +151,42 @@ export default function UavQuestionnaireForm() {
     }
 
     const fd = new FormData();
+
     Object.entries(form).forEach(([k, v]) => {
       if (k === 'files') return;
-      if (Array.isArray(v)) fd.append(k, JSON.stringify(v));
-      else fd.append(k, v ?? '');
-    });
-    form.files.forEach((f) => fd.append('files', f));
 
-    // TODO: подключишь реальный эндпоинт
-    // await fetch('/api/uav-questionnaire', { method: 'POST', body: fd });
-
-    console.log('UAV QUESTIONNAIRE SUBMIT', {
-      ...form,
-      files: form.files.map((f) => ({ name: f.name, size: f.size })),
+      if (Array.isArray(v)) {
+        fd.append(k, JSON.stringify(v));
+      } else {
+        fd.append(k, String(v ?? ''));
+      }
     });
 
-    alert('Дякуємо! Заявку надіслано.');
+    form.files.forEach((f) => fd.append('files[]', f));
+
+    // honeypot: должно оставаться пустым
+    fd.append('website', '');
+
+    try {
+      const res = await fetch('/send-form.php', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: fd,
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || 'Помилка відправки');
+      }
+
+      alert('Дякуємо! Заявку надіслано.');
+    } catch (error) {
+      console.error(error);
+      alert('Помилка відправки форми');
+    }
   };
 
   return (
