@@ -13,6 +13,7 @@ import StrengthCalculation from '../components/ui/StrengthCalculation';
 import ComplexApproach from '../components/ui/ComplexApproach';
 import ProcessSteps from '../components/ui/ProcessSteps';
 import CableProtectionSection from '../components/ui/CableProtectionSection';
+import ContactForm from '../components/ui/ContactForm';
 
 const LandingPage: React.FC = () => {
   return (
@@ -30,6 +31,9 @@ const LandingPage: React.FC = () => {
       <StrengthCalculation />
       <ComplexApproach />
       <ProcessSteps />
+      <div id="contact-form" className="my-16 scroll-mt-24">
+        <ContactForm />
+      </div>{' '}
     </div>
   );
 };

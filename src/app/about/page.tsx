@@ -70,7 +70,7 @@ export default function UavProtectionQuestionnairePage() {
               Залишити заявку
             </button>
 
-            <button
+            {/* <button
               type="button"
               onClick={scrollToForm}
               className="rounded-xl border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition"
@@ -84,7 +84,7 @@ export default function UavProtectionQuestionnairePage() {
               className="rounded-xl border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition"
             >
               Отримати консультацію
-            </button>
+            </button> */}
           </div>
         </div>
 

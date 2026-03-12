@@ -1,4 +1,13 @@
+'use client';
+
 import Image from 'next/image';
+
+function scrollToForm() {
+  const el = document.getElementById('contact-form');
+  if (!el) return;
+  const y = el.getBoundingClientRect().top + window.scrollY - 96; // offset под хедер
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
 
 export default function HeroBPLA() {
   return (
@@ -38,16 +47,23 @@ export default function HeroBPLA() {
             Комплексний багаторівневий захист критичної інфраструктури, промислових об'єктів та
             стратегічних територій
           </p> */}
-
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3 pt-16">
+            <button
+              type="button"
+              onClick={scrollToForm}
+              className="rounded-xl bg-yellow-400 px-5 py-3 text-sm font-semibold text-black hover:brightness-95 transition"
+            >
+              Залишити заявку
+            </button>
+          </div>
+          {/* <div className="mt-10 flex flex-wrap gap-4">
             <button className="text-base md:text-lg rounded-2xl bg-blue-600 px-8 py-4 text-white font-semibold hover:bg-blue-700 transition">
               Отримати консультацію
-            </button>
+            </button> */}
 
-            {/* <button className="rounded-2xl border border-white/40 px-8 py-4 text-white font-semibold hover:bg-white/10 transition">
+          {/* <button className="rounded-2xl border border-white/40 px-8 py-4 text-white font-semibold hover:bg-white/10 transition">
               Дізнатися більше
             </button> */}
-          </div>
         </div>
       </div>
 
