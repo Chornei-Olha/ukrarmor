@@ -31,7 +31,7 @@ const engineeringSteps = [
       'Врахування вимог безпеки на етапі проєктування',
       'Контроль відповідності нормативним документам',
     ],
-    image: '/images/engineering-standards.webp',
+    image: '/images/compliance-with-current-regulations.webp',
   },
 ];
 

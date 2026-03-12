@@ -7,7 +7,7 @@ const privateFocus = [
   },
   {
     title: 'Нафтосховища',
-    image: '/images/priority-oil.webp',
+    image: '/images/oil-storages.webp',
   },
   {
     title: 'Промислові будівлі, цехи',
@@ -22,11 +22,11 @@ const privateFocus = [
 const stateFocus = [
   {
     title: 'Авто та броньований транспорт',
-    image: '/images/priority-armored.webp',
+    image: '/images/armored-transport.webp',
   },
   {
     title: 'Стоянки техніки',
-    image: '/images/priority-parking.webp',
+    image: '/images/parking-equipment.webp',
   },
 ];
 

@@ -287,13 +287,13 @@ export default function UavQuestionnaireForm() {
             />
           </div>
 
-          <button
+          {/* <button
             type="button"
             className="inline-flex items-center justify-center rounded-md bg-blue-700 text-white px-5 py-2.5 text-sm font-semibold hover:bg-blue-800 transition"
             onClick={() => alert('Тут логіка “Додати обʼєкт” (якщо треба мульти-обʼєкти)')}
           >
             Додати об&apos;єкт
-          </button>
+          </button> */}
         </section>
 
         {/* SECTION: documents upload */}
