@@ -185,7 +185,7 @@ export default function UavQuestionnaireForm() {
       alert('Дякуємо! Заявку надіслано.');
     } catch (error) {
       console.error(error);
-      alert('Помилка відправки форми');
+      alert(error instanceof Error ? error.message : 'Помилка відправки форми');
     }
   };
 
