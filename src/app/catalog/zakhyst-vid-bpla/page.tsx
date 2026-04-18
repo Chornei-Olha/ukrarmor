@@ -42,8 +42,8 @@ export default function ZakhystVidBplaPage() {
               >
                 <div className="relative h-64 overflow-hidden rounded-2xl shadow-md transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl">
                   <Image
-                    src={item.image}
-                    alt={item.title}
+                    src={item.image ?? '/images/placeholder.jpg'}
+                    alt={`${item.title} UkrArmor`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />

@@ -479,6 +479,8 @@ export const bplaCategories: BplaCategory[] = [
   {
     slug: 'shvydkomontovani-ukryttya-vid-bpla',
     title: 'Швидкомонтовані укриття від БПЛА',
+    image: '/images/zahyst/shvydkomontovani-ukryttya/main.png',
+
     gallery: [
       '/images/zahyst/shvydkomontovani-ukryttya/main.png',
       '/images/zahyst/shvydkomontovani-ukryttya/main-2.png',
@@ -666,7 +668,7 @@ export const bplaCategories: BplaCategory[] = [
   {
     slug: 'proektuvalnyk',
     title: 'Я проектувальник — потрібна допомога',
-    image: '/images/bpla/engineer.webp',
+    image: '/images/engineer.webp',
     short: 'Допомога інженера, консультація, прорахунок, підбір рішення.',
   },
 ];
