@@ -15,7 +15,7 @@ export default function HeroBPLA() {
       {/* Background Image */}
       <Image
         src="/images/TTPP.webp"
-        alt="Інженерні рішення від атак БПЛА"
+        alt="Інженерні рішення захисту від БПЛА"
         fill
         priority
         className="object-cover"

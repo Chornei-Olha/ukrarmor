@@ -19,7 +19,7 @@ export default function ChallengesSection() {
             <div className="relative w-full max-w-xl aspect-[2]">
               <Image
                 src="/images/protection.webp"
-                alt="Захисна сітка та конструкція"
+                alt="Захист об'єкта від БПЛА сітчастою системою"
                 fill
                 className="object-contain"
               />
@@ -45,7 +45,7 @@ export default function ChallengesSection() {
             <div className="flex items-start gap-4">
               <Image
                 src="/images/drone.webp"
-                alt="Дрон"
+                alt="Система захисту промислового підприємства від дронів"
                 width={200}
                 height={200}
                 className="object-contain shrink-0"

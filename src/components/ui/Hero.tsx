@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="relative hero-image-wrapper md:translate-x-20">
             <Image
               src="/images/hero-drone2.webp"
-              alt="Дрон за захисною сіткою"
+              alt="Захист об'єкта від БПЛА сітчастою системою"
               width={700}
               height={700}
               className="object-contain"

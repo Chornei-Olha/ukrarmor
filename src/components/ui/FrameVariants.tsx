@@ -18,7 +18,7 @@ export default function FrameVariants() {
             <div className="relative flex-1 bg-gray-100">
               <Image
                 src="/images/frame-scheme.webp"
-                alt="Схема конструкції"
+                alt="Інженерні рішення захисту від БПЛА"
                 fill
                 className="object-cover"
               />
@@ -30,7 +30,7 @@ export default function FrameVariants() {
             <div>
               <Image
                 src="/images/frame-photo-1.webp"
-                alt=""
+                alt="Інженерні рішення захисту від БПЛА"
                 width={300}
                 height={300}
                 className="object-cover"
@@ -40,7 +40,7 @@ export default function FrameVariants() {
             <div>
               <Image
                 src="/images/frame-photo-2.webp"
-                alt=""
+                alt="Інженерні рішення захисту від БПЛА"
                 width={300}
                 height={300}
                 className="object-cover"

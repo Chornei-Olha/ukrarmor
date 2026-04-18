@@ -14,18 +14,51 @@ export type Product = {
   fullDescriptionHtml?: string; // длинный текст + списки
 };
 
+export type CategorySeo = {
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogAlt?: string;
+  productListTitle?: string;
+  descriptionTitle?: string;
+  breadcrumbTitle?: string;
+  cardAlts?: string[];
+};
+
 export type Category = {
   slug: string;
   title: string;
   image: string;
   descriptionHtml?: string; // большой текст под сеткой (для категории)
   products: Product[];
+  seo?: CategorySeo;
 };
 
 export const bronpaneliCategories: Category[] = [
   {
     slug: 'beton-zalivni-zvarni',
     title: 'Бронепанелі бетонно-заливні зварні',
+    seo: {
+      title: 'Бронепанелі бетонно-заливні зварні | UkrArmor',
+      description:
+        "Бронепанелі бетонно-заливні зварні від виробника UkrArmor для захисту об'єктів, приміщень та інфраструктури.",
+      ogTitle: 'Бронепанелі бетонно-заливні зварні | UkrArmor',
+      ogDescription: "Бронепанелі бетонно-заливні зварні для захисту об'єктів.",
+      ogAlt: 'Бронепанелі бетонно-заливні зварні',
+      productListTitle: 'Види бронепанелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Бетонно-заливні зварні',
+      cardAlts: [
+        'Панель бетонно-заливна зварна',
+        'Бронепанелі бетонно-заливні зварні для приміщень',
+        'Метало-бетонні панелі зварного типу',
+        'Бронепанелі БР-2',
+        'Бронепанелі БР-3',
+        'Бронепанелі БР-4',
+        'Бронепанелі БР-5',
+      ],
+    },
     image: '/images/products/panel-1/main.png',
     descriptionHtml: `
 <h2>Бронепанелі бетонно-заливні зварні</h2>
@@ -561,6 +594,23 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'metalo-betonni-z-boltovym-ziednannyam',
     title: "Панелі метало-бетонні з болтовим з'єднанням",
+    seo: {
+      title: "Панелі метало-бетонні з болтовим з'єднанням | UkrArmor",
+      description:
+        "Панелі метало-бетонні з болтовим з'єднанням від виробника UkrArmor для захисту об'єктів, приміщень та інфраструктури.",
+      ogTitle: "Панелі метало-бетонні з болтовим з'єднанням | UkrArmor",
+      ogDescription: "Панелі метало-бетонні з болтовим з'єднанням для захисту об'єктів.",
+      ogAlt: "Панелі метало-бетонні з болтовим з'єднанням",
+      productListTitle: 'Види бронепанелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: "Панелі метало-бетонні з болтовим з'єднанням",
+      cardAlts: [
+        "Панелі метало-бетонні з болтовим з'єднанням",
+        'Метало-бетонні бронепанелі з болтовим кріпленням',
+        'Бронепанелі метало-бетонні для приміщень',
+        'Метало-бетонні захисні панелі',
+      ],
+    },
     image: '/images/products/bolt-1/main.png',
     descriptionHtml: `
     <h2>Панелі метало-бетонні з болтовим з'єднанням</h2>
@@ -884,6 +934,24 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'sendvich-bronepaneli-zvarni',
     title: 'Сендвіч бронепанелі зварні',
+    seo: {
+      title: 'Сендвіч бронепанелі зварні | UkrArmor',
+      description:
+        "Сендвіч бронепанелі зварні від виробника UkrArmor для захисту об'єктів, приміщень та інфраструктури.",
+      ogTitle: 'Сендвіч бронепанелі зварні | UkrArmor',
+      ogDescription: "Сендвіч бронепанелі зварні для захисту об'єктів.",
+      ogAlt: 'Сендвіч бронепанелі зварні',
+      productListTitle: 'Види бронепанелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Сендвіч бронепанелі зварні',
+      cardAlts: [
+        'Сендвіч бронепанелі зварні',
+        "Бронепанель сендвіч типу зі зварним з'єднанням",
+        'Зварна сендвіч бронепанель',
+        'Полегшена сендвіч бронепанель',
+        'Сендвіч панель зварна БР-3',
+      ],
+    },
     image: '/images/products/sandwich-welded-1/main.png',
     descriptionHtml: `
     <h2>Сендвіч бронепанелі зварні</h2>
@@ -1213,6 +1281,25 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'sendvich-bronepaneli-boltovi',
     title: 'Сендвіч бронепанелі болтові',
+    seo: {
+      title: 'Сендвіч бронепанелі болтові | UkrArmor',
+      description:
+        "Сендвіч бронепанелі болтові від виробника UkrArmor для захисту об'єктів, приміщень та інфраструктури.",
+      ogTitle: 'Сендвіч бронепанелі болтові | UkrArmor',
+      ogDescription: "Сендвіч бронепанелі болтові для захисту об'єктів.",
+      ogAlt: 'Сендвіч бронепанелі болтові',
+      productListTitle: 'Види бронепанелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Сендвіч бронепанелі болтові',
+      cardAlts: [
+        'Сендвіч бронепанелі болтові',
+        "Сендвіч бронепанель з болтовим з'єднанням",
+        'Болтова сендвіч бронепанель',
+        'Сендвіч-панель болтова БР-1',
+        'Сендвіч-панель болтова БР-2',
+        'Сендвіч-панель болтова БР-3',
+      ],
+    },
     image: '/images/products/sandwich-bolt-1/main.png',
     descriptionHtml: `
     <h2>Сендвіч бронепанелі болтові</h2>
@@ -1656,6 +1743,23 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'zakhysni-paneli',
     title: 'Захисні панелі',
+    seo: {
+      title: 'Захисні панелі | UkrArmor',
+      description:
+        "Захисні панелі від виробника UkrArmor для захисту об'єктів, приміщень та інфраструктури від сучасних загроз.",
+      ogTitle: 'Захисні панелі | UkrArmor',
+      ogDescription: "Захисні панелі для інженерного захисту об'єктів.",
+      ogAlt: 'Захисні панелі UkrArmor',
+      productListTitle: 'Види захисних панелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Захисні панелі',
+      cardAlts: [
+        'Захисні панелі для обʼєктів',
+        'Інженерні захисні панелі',
+        'Панелі для захисту інфраструктури',
+        'Захисні панелі для промисловості',
+      ],
+    },
     image: '/images/products/zakhysni-paneli-1/main.png',
     descriptionHtml: `
     <h2>Захисні панелі</h2>
@@ -2096,6 +2200,24 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'kulestiiki-bronovani-paneli',
     title: 'Кулестійкі броньовані панелі',
+    seo: {
+      title: 'Кулестійкі броньовані панелі | UkrArmor',
+      description:
+        "Кулестійкі броньовані панелі від виробника UkrArmor для захисту об'єктів та приміщень від вогнепальної загрози.",
+      ogTitle: 'Кулестійкі броньовані панелі | UkrArmor',
+      ogDescription: "Кулестійкі броньовані панелі для захисту об'єктів.",
+      ogAlt: 'Кулестійкі броньовані панелі',
+      productListTitle: 'Види кулестійких панелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Кулестійкі панелі',
+      cardAlts: [
+        'Кулестійкі броньовані панелі',
+        'Бронепанелі кулестійкі для приміщень',
+        'Панелі захисту від вогнепальної зброї',
+        'Кулестійкі панелі БР-2',
+        'Кулестійкі панелі БР-3',
+      ],
+    },
     image: '/images/products/kulbr-paneli-1/main.png',
 
     descriptionHtml: `
@@ -2186,6 +2308,24 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'zlamostiiki-bronepaneli',
     title: 'Зламостійкі бронепанелі',
+    seo: {
+      title: 'Зламостійкі бронепанелі | UkrArmor',
+      description:
+        "Зламостійкі бронепанелі від виробника UkrArmor для захисту приміщень, сховищ та об'єктів від несанкціонованого доступу.",
+      ogTitle: 'Зламостійкі бронепанелі | UkrArmor',
+      ogDescription: "Зламостійкі бронепанелі для захисту об'єктів.",
+      ogAlt: 'Зламостійкі бронепанелі',
+      productListTitle: 'Види зламостійких панелей',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Зламостійкі панелі',
+      cardAlts: [
+        'Зламостійкі бронепанелі',
+        'Бронепанелі захисту від злому',
+        'Панелі для сейфових кімнат',
+        'Зламостійкі панелі БР-3',
+        'Зламостійкі панелі БР-4',
+      ],
+    },
     image: '/images/products/zlms-paneli-1/main.png',
     descriptionHtml: `
     <h2>Зламостійкі бронепанелі</h2>
@@ -2263,6 +2403,18 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-1-klasu',
     title: 'Броньовані панелі 1 класу',
+    seo: {
+      title: 'Броньовані панелі 1 класу | UkrArmor',
+      description:
+        "Броньовані панелі 1 класу від виробника UkrArmor для захисту об'єктів та приміщень.",
+      ogTitle: 'Броньовані панелі 1 класу | UkrArmor',
+      ogDescription: "Броньовані панелі 1 класу для захисту об'єктів.",
+      ogAlt: 'Броньовані панелі 1 класу',
+      productListTitle: 'Види панелей 1 класу',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Панелі 1 класу',
+      cardAlts: ['Броньовані панелі 1 класу'],
+    },
     image: '/images/products/zlms-paneli-1/main-3.png',
     descriptionHtml: `
     <h2>Броньовані панелі 1 класу</h2>
@@ -2361,6 +2513,18 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-2-klasu',
     title: 'Броньовані панелі 2 класу',
+    seo: {
+      title: 'Броньовані панелі 2 класу | UkrArmor',
+      description:
+        "Броньовані панелі 2 класу від виробника UkrArmor для захисту об'єктів та приміщень.",
+      ogTitle: 'Броньовані панелі 2 класу | UkrArmor',
+      ogDescription: "Броньовані панелі 2 класу для захисту об'єктів.",
+      ogAlt: 'Броньовані панелі 2 класу',
+      productListTitle: 'Види панелей 2 класу',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Панелі 2 класу',
+      cardAlts: ['Броньовані панелі 2 класу'],
+    },
     image: '/images/products/zlms-paneli-1/main-4.png',
     descriptionHtml: `
     <h2>Броньовані панелі 2 класу</h2>
@@ -2458,6 +2622,18 @@ export const bronpaneliCategories: Category[] = [
   },
   {
     slug: 'bronovani-paneli-3-klasu',
+    seo: {
+      title: 'Броньовані панелі 3 класу | UkrArmor',
+      description:
+        "Броньовані панелі 3 класу від виробника UkrArmor для захисту об'єктів та приміщень.",
+      ogTitle: 'Броньовані панелі 3 класу | UkrArmor',
+      ogDescription: "Броньовані панелі 3 класу для захисту об'єктів.",
+      ogAlt: 'Броньовані панелі 3 класу',
+      productListTitle: 'Види панелей 3 класу',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Панелі 3 класу',
+      cardAlts: ['Броньовані панелі 3 класу'],
+    },
     title: 'Броньовані панелі 3 класу',
     image: '/images/products/zlms-paneli-1/main-5.png',
     descriptionHtml: `
@@ -2558,6 +2734,18 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-4-klasu',
     title: 'Броньовані панелі 4 класу',
+    seo: {
+      title: 'Броньовані панелі 4 класу | UkrArmor',
+      description:
+        "Броньовані панелі 4 класу від виробника UkrArmor для захисту об'єктів та приміщень.",
+      ogTitle: 'Броньовані панелі 4 класу | UkrArmor',
+      ogDescription: "Броньовані панелі 4 класу для захисту об'єктів.",
+      ogAlt: 'Броньовані панелі 4 класу',
+      productListTitle: 'Види панелей 4 класу',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Панелі 4 класу',
+      cardAlts: ['Броньовані панелі 4 класу'],
+    },
     image: '/images/products/zlms-paneli-1/main-6.png',
     descriptionHtml: `
     <h2>Броньовані панелі 4 класу</h2>
@@ -2656,6 +2844,18 @@ export const bronpaneliCategories: Category[] = [
   {
     slug: 'bronovani-paneli-5-klasu',
     title: 'Броньовані панелі 5 класу',
+    seo: {
+      title: 'Броньовані панелі 5 класу | UkrArmor',
+      description:
+        "Броньовані панелі 5 класу від виробника UkrArmor для захисту об'єктів та приміщень.",
+      ogTitle: 'Броньовані панелі 5 класу | UkrArmor',
+      ogDescription: "Броньовані панелі 5 класу для захисту об'єктів.",
+      ogAlt: 'Броньовані панелі 5 класу',
+      productListTitle: 'Види панелей 5 класу',
+      descriptionTitle: 'Опис',
+      breadcrumbTitle: 'Панелі 5 класу',
+      cardAlts: ['Броньовані панелі 5 класу'],
+    },
     image: '/images/products/zlms-paneli-1/main-7.png',
     descriptionHtml: `
     <h2>Броньовані панелі 5 класу</h2>

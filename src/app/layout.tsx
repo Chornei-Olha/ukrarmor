@@ -52,6 +52,31 @@ export default function RootLayout({
   return (
     <html lang="uk" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <body className="font-body flex flex-col min-h-screen">
+        {/* GLOBAL JSON-LD (ORGANIZATION) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'UkrArmor',
+              url: 'https://ukrarmor.kiev.ua/',
+              logo: 'https://ukrarmor.kiev.ua/logo.png',
+              telephone: '+3805009999514',
+              email: 'ukrarmor.kiev@ukr.net',
+              areaServed: 'UA',
+              contactPoint: [
+                {
+                  '@type': 'ContactPoint',
+                  telephone: '+3805009999514',
+                  contactType: 'customer support',
+                  areaServed: 'UA',
+                  availableLanguage: ['Ukrainian'],
+                },
+              ],
+            }),
+          }}
+        />
         <Header />
 
         <main className="flex-1">{children}</main>

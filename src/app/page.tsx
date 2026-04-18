@@ -1,40 +1,40 @@
-'use client';
-import React from 'react';
-import HeroSection from '../components/ui/Hero';
-import ChallengesSection from '../components/ui/ChallengesSection';
-import HeroBPLA from '../components/ui/HeroBPLA';
-import ComparativeSection from '../components/ui/ComparativeSection';
-import PriorityObjectsSection from '../components/ui/PriorityObjectsSection';
-import { EngineeringServicesLeft } from '../components/ui/EngineeringServicesLeft';
-import { EngineeringServicesRight } from '../components/ui/EngineeringServicesRight';
-import FrameVariants from '../components/ui/FrameVariants';
-import CableNetSystems from '../components/ui/CableNetSystems';
-import StrengthCalculation from '../components/ui/StrengthCalculation';
-import ComplexApproach from '../components/ui/ComplexApproach';
-import ProcessSteps from '../components/ui/ProcessSteps';
-import CableProtectionSection from '../components/ui/CableProtectionSection';
-import ContactForm from '../components/ui/ContactForm';
+import type { Metadata } from 'next';
+import LandingPage from './LandingPage';
 
-const LandingPage: React.FC = () => {
-  return (
-    <div className="min-h-screen font-inter overflow-x-hidden">
-      <HeroSection />
-      <ChallengesSection />
-      <HeroBPLA />
-      <ComparativeSection />
-      <CableProtectionSection />
-      <PriorityObjectsSection />
-      <EngineeringServicesLeft />
-      <EngineeringServicesRight />
-      <FrameVariants />
-      <CableNetSystems />
-      <StrengthCalculation />
-      <ComplexApproach />
-      <ProcessSteps />
-      <div id="contact-form" className="my-16 scroll-mt-24">
-        <ContactForm />
-      </div>{' '}
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Комплексний захист від БПЛА для підприємств | UkrArmor',
+  description:
+    "Інженерні рішення захисту від БПЛА: проєктування, виробництво та монтаж. Захист промислових і стратегічних об'єктів від дронів.",
+
+  alternates: {
+    canonical: 'https://ukrarmor.kiev.ua/',
+  },
+
+  openGraph: {
+    title: 'Комплексний захист від БПЛА для підприємств | UkrArmor',
+    description: "Інженерні рішення захисту від БПЛА для промислових і критичних об'єктів.",
+    url: 'https://ukrarmor.kiev.ua/',
+    siteName: 'UkrArmor',
+    locale: 'uk_UA',
+    type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Захист від БПЛА UkrArmor',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Комплексний захист від БПЛА для підприємств | UkrArmor',
+    description: 'Інженерні рішення захисту від БПЛА.',
+    images: ['/og-image.jpg'],
+  },
 };
-export default LandingPage;
+
+export default function Page() {
+  return <LandingPage />;
+}

@@ -52,7 +52,7 @@ export default function CableNetSystems() {
             <div className="relative col-span-2 aspect-[16/6]">
               <Image
                 src="/images/net-scheme.webp"
-                alt="Схема сітки"
+                alt="Захист об'єкта від БПЛА сітчастою системою"
                 fill
                 className="object-contain"
               />
@@ -61,7 +61,7 @@ export default function CableNetSystems() {
             <div className="relative aspect-[4/5]">
               <Image
                 src="/images/net-detail.webp"
-                alt="Деталь сітки"
+                alt="Захист об'єкта від БПЛА сітчастою системою"
                 fill
                 className="object-contain"
               />
@@ -70,7 +70,7 @@ export default function CableNetSystems() {
             <div className="relative aspect-[4/5]">
               <Image
                 src="/images/net-rolls.webp"
-                alt="Рулони сітки"
+                alt="Захист об'єкта від БПЛА сітчастою системою"
                 fill
                 className="object-contain"
               />

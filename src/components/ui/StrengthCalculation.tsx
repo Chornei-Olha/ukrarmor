@@ -18,11 +18,21 @@ export default function StrengthCalculation() {
             </p>
 
             <div className="relative aspect-[4/3]">
-              <Image src="/images/solid-model-1.webp" alt="" fill className="object-contain" />
+              <Image
+                src="/images/solid-model-1.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-contain"
+              />
             </div>
 
             <div className="relative aspect-[4/3]">
-              <Image src="/images/solid-model-2.webp" alt="" fill className="object-contain" />
+              <Image
+                src="/images/solid-model-2.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
 
@@ -34,11 +44,21 @@ export default function StrengthCalculation() {
             </p>
 
             <div className="relative aspect-[4/3]">
-              <Image src="/images/beam-model-1.webp" alt="" fill className="object-contain" />
+              <Image
+                src="/images/beam-model-1.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-contain"
+              />
             </div>
 
             <div className="relative aspect-[4/3]">
-              <Image src="/images/beam-model-2.webp" alt="" fill className="object-contain" />
+              <Image
+                src="/images/beam-model-2.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
 
@@ -50,13 +70,28 @@ export default function StrengthCalculation() {
             </p>
 
             <div className="relative aspect-[4/3]">
-              <Image src="/images/membrane-model-1.webp" alt="" fill className="object-cover" />
+              <Image
+                src="/images/membrane-model-1.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="relative aspect-[4/3]">
-              <Image src="/images/membrane-model-2.webp" alt="" fill className="object-cover" />
+              <Image
+                src="/images/membrane-model-2.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="relative aspect-[4/3]">
-              <Image src="/images/membrane-model-3.webp" alt="" fill className="object-cover" />
+              <Image
+                src="/images/membrane-model-3.webp"
+                alt="Інженерні рішення захисту від БПЛА"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

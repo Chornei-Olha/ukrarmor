@@ -55,7 +55,7 @@ export function EngineeringServicesRight() {
         <div className="relative h-72 md:h-[420px] w-full">
           <Image
             src="/images/engineering-net.webp"
-            alt="Сітчаста конструкція захисту"
+            alt="Захист об'єкта від БПЛА сітчастою системою"
             fill
             className="object-cover"
           />

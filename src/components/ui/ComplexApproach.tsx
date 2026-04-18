@@ -19,7 +19,12 @@ export default function ComplexApproach() {
             <div className="grid grid-cols-3 gap-4">
               {['model-1.webp', 'model-2.webp', 'model-3.webp'].map((img) => (
                 <div key={img} className="relative aspect-[4/3]">
-                  <Image src={`/images/${img}`} alt="" fill className="object-contain" />
+                  <Image
+                    src={`/images/${img}`}
+                    alt="Система захисту промислового підприємства від дронів"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               ))}
             </div>
@@ -32,7 +37,12 @@ export default function ComplexApproach() {
             </div>
 
             <div className="relative aspect-[16/6] rounded-lg overflow-hidden">
-              <Image src="/images/physical-model.webp" alt="" fill className="object-cover" />
+              <Image
+                src="/images/physical-model.webp"
+                alt="Система захисту промислового підприємства від дронів"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
@@ -51,7 +61,12 @@ export default function ComplexApproach() {
             <div className="grid grid-cols-3 gap-4">
               {['test-1.webp', 'test-2.webp', 'test-3.webp'].map((img) => (
                 <div key={img} className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                  <Image src={`/images/${img}`} alt="" fill className="object-cover" />
+                  <Image
+                    src={`/images/${img}`}
+                    alt="Система захисту промислового підприємства від дронів"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               ))}
             </div>

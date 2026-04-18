@@ -32,7 +32,7 @@ export default function CableProtectionSection() {
           <div className="relative h-64 md:h-80 w-full">
             <Image
               src="/images/cable-protection.webp"
-              alt="Тросова система захисту"
+              alt="Тросово-сітчастий захист від атак дронів"
               fill
               className="object-contain"
             />
