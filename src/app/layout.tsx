@@ -65,7 +65,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'UkrArmor',
               url: 'https://ukrarmor.kiev.ua/',
-              logo: 'https://ukrarmor.kiev.ua/logo.png',
+              logo: 'https://ukrarmor.kiev.ua/images/logo.webp',
               telephone: '+3805009999514',
               email: 'ukrarmor.kiev@ukr.net',
               areaServed: 'UA',
