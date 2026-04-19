@@ -29,7 +29,7 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: [{ url: '/images/logo.webp' }],
+    icon: [{ url: '/images/logo-s.webp' }],
   },
   openGraph: {
     title: 'Ukrarmor',
@@ -37,7 +37,7 @@ export const metadata = {
     url: 'https://ukrarmor.kiev.ua/',
     images: [
       {
-        url: 'https://ukrarmor.kiev.ua/images/logo.webp',
+        url: 'https://ukrarmor.kiev.ua/images/logo-s.webp',
         width: 1200,
         height: 630,
         alt: 'Ukrarmor Logo',
