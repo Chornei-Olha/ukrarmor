@@ -24,20 +24,20 @@ export const viewport = {
 export const metadata = {
   title: 'Ukrarmor',
   description: 'Protection from drones',
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [{ url: '/images/logo.webp' }],
   },
   openGraph: {
     title: 'Ukrarmor',
     description: 'Protection from drones',
-    robots: {
-      index: true,
-      follow: true,
-    },
     url: 'https://ukrarmor.kiev.ua/',
     images: [
       {
-        url: 'https://ukrarmor.kiev.ua//images/logo.webp',
+        url: 'https://ukrarmor.kiev.ua/images/logo.webp',
         width: 1200,
         height: 630,
         alt: 'Ukrarmor Logo',
